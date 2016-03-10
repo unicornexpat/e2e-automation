@@ -1,0 +1,34 @@
+{
+  "name": "appium-sample-code",
+  "version": "1.0.0",
+  "description": "Appium Sample Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.io.thehut.local/Ethan.Nguyen/elysium-e2e-mobile.git"
+  },
+  "keywords": [
+    "appium",
+    "sampl",
+    "examples"
+  ],
+  "author": "sebv",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://gitlab.io.thehut.local/Ethan.Nguyen/elysium-e2e-mobile"
+  },
+  "homepage": "https://gitlab.io.thehut.local/Ethan.Nguyen/elysium-e2e-mobile",
+  "devDependencies": {
+    "chai": "2.2.0",
+    "chai-as-promised": "^5.0.0",
+    "colors": "^1.0.3",
+    "express": "^4.12.3",
+    "mochawesome": "^1.3.0",
+    "q": "^2.0.2",
+    "underscore": "^1.8.3",
+    "wd": "^0.3.11"
+  }
+}
