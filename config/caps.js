@@ -4,7 +4,7 @@ var device = {},
 
 //READ device
 device.nexus5 = {
-    browserName: '',
+    browserName: 'chrome',
     'appium-version': '1.4.13',
     platformName: 'ANDROID',
     platformVersion: '5.1',
@@ -13,7 +13,7 @@ device.nexus5 = {
 };
 
 device.iIphone6Plus = {
-    browserName: '',
+    browserName: 'safari',
     'appium-version': '1.4.13',
     platformName: 'iOS',
     platformVersion: '9.2',
@@ -24,7 +24,7 @@ device.iIphone6Plus = {
 
 //simulator
 simulator.nexus6_Android19 = {
-    browserName: '',
+    browserName: 'chrome',
     'appium-version': '1.4.13',
     platformName: 'ANDROID',
     platformVersion: '5.1',
@@ -33,7 +33,7 @@ simulator.nexus6_Android19 = {
 };
 
 simulator.iPhone5S_ios92 = {
-    browserName: '',
+    browserName: 'safari',
     'appium-version': '1.4.13',
     platformName: 'iOS',
     platformVersion: '9.2',
@@ -42,7 +42,7 @@ simulator.iPhone5S_ios92 = {
 };
 
 simulator.iPhone6S_ios92 = {
-    browserName: '',
+    browserName: 'safari',
     'appium-version': '1.4.13',
     platformName: 'iOS',
     platformVersion: '9.2',

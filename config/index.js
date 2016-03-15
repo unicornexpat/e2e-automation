@@ -1,18 +1,14 @@
-
+var _ = require('underscore');
 
 var index = {
     debug: false,
     takeScreenShots:true,
     useSauceLabs: false,
-    environments: require('./environments'),
-    serverBlocks: require('./server-blocks'),
+    environments: 'live',
     sites: require('./sites'),
     specs: require('../specs/index'),
-    defaultCapabilities: {
-        browserName: 'firefox',
-    },
-    caps: require('./caps'),
-    sauceLabs: require('./sauce-labs')
+    serverConfig: require('./appium-servers').local.host1,
+    desired: _.clone(require("./caps").device.iIphone6Plus)
 };
 
 module.exports = index;

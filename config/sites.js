@@ -11,7 +11,8 @@ sites.allSole = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -26,7 +27,8 @@ sites.beautyExpert = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -41,7 +43,8 @@ sites.coggles = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -56,7 +59,8 @@ sites.elizabethArden = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 
 };
@@ -71,7 +75,8 @@ sites.exanteDiet = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 
 };
@@ -87,7 +92,8 @@ sites.hqHair = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -102,7 +108,8 @@ sites.theHut = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -117,7 +124,8 @@ sites.iwoot = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -132,7 +140,8 @@ sites.lookFantastic = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -147,7 +156,8 @@ sites.manKind = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -162,7 +172,8 @@ sites.massFi = {
     keys: {
         searchFound: 'Löydetty',
         logIn: 'Käyttäjätiliin kirjautuminen',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -177,7 +188,8 @@ sites.myBag = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -192,7 +204,8 @@ sites.mio = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -207,7 +220,8 @@ sites.mious = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -222,7 +236,8 @@ sites.myGeekBox = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -237,7 +252,8 @@ sites.myProtein = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -252,7 +268,8 @@ sites.myVitamins = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -260,6 +277,7 @@ sites.powerMan = {
     name: 'PowerMan',
     bundle: undefined,
     facet: false,
+    pagination: false,
     urls: {
         dev: 'http://m.pminten.pl.thehutgroup.thg/',
         live: 'http://m.powerman.co.uk/'
@@ -267,7 +285,8 @@ sites.powerMan = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -282,13 +301,15 @@ sites.proBikeKit = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
 /*sites.nectar = {
     name: 'Nectar',
     bundle: undefined,
+ pagination: false,
     urls: {
         dev: 'http://m.nectaren.pl.thehutgroup.thg/',
         live: 'http://m.exclusives.nectar.com/'
@@ -296,7 +317,8 @@ sites.proBikeKit = {
     keys: {
         searchFound: 'Found',
  logIn: 'Login',
- facet: 'facetFilters'
+ facet: 'facetFilters',
+ pagination: 'pageNumber=2'
     }
 };*/
 
@@ -311,7 +333,8 @@ sites.nintendo = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -326,7 +349,8 @@ sites.zavvi = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
@@ -341,7 +365,8 @@ sites.urbanRetreat = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
 
     }
 };
@@ -350,6 +375,7 @@ sites.growGorgeousUS = {
     name: 'Grow Gorgeous US',
     bundle: undefined,
     facet: true,
+    pagination: false,
     urls: {
         dev: 'http://m.growgorgeousus.pl.thehutgroup.thg',
         live: 'http://m.growgorgeous.com/'
@@ -357,13 +383,15 @@ sites.growGorgeousUS = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
 sites.growGorgeousUK = {
     name: 'Grow Gorgeous UK',
     bundle: undefined,
+    pagination: false,
     facet: true,
     urls: {
         dev: 'http://m.growgorgeousgb.pl.thehutgroup.thg',
@@ -372,12 +400,14 @@ sites.growGorgeousUK = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 sites.lancer = {
     name: 'Lancer Skin Care',
     bundle: undefined,
+    pagination: false,
     facet: true,
     urls: {
         dev: 'http://m.lanceren.pl.thehutgroup.thg',
@@ -386,7 +416,8 @@ sites.lancer = {
     keys: {
         searchFound: 'Found',
         logIn: 'Login',
-        facet: 'facetFilters'
+        facet: 'facetFilters',
+        pagination: 'pageNumber=2'
     }
 };
 
