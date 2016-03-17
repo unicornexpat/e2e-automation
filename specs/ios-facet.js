@@ -5,13 +5,13 @@ var wd = require("wd"),
 
 var iosFacet = function (options, site) {
 
-    describe("==================== THG_IOS_PRODUCT_VARIATIONS: " + site.name + " ====================", function () {
+    describe("THG_IOS_FACET: " + site.name, function () {
         this.timeout(100000);
-        var allPassed = true;
-        var driver;
-        var desired = options.desired;
-        var tries_threshold = 2;
-
+        var allPassed = true,
+            driver,
+            desired = options.desired,
+            tries_threshold = 2,
+            siteUrl = site.urls[options.env];
 
         before(function () {
             driver = wd.promiseChainRemote(options.serverConfig);
@@ -24,7 +24,7 @@ var iosFacet = function (options, site) {
             return driver
                 .quit()
                 .finally(function () {
-                    if (process.env.SAUCE) {
+                    if (options.sauceLabs) {
                         return driver.sauceJobStatus(allPassed);
                     }
                 });
@@ -34,99 +34,42 @@ var iosFacet = function (options, site) {
             allPassed = allPassed && this.currentTest.state === 'passed';
         });
 
-        it("SEARCH_SPEC: " + site.name + " - Return At Least 1 Item", function sectionsClick(done) {
-            var tries = 0;
-
-            function actualSearchTest(next) {
-                driver.chain()
-                    .get(site.urls.live)
-                    .elementByCss('.search-focus', function touchSearch(err, search) {
+        it("SEARCH_SPEC: " + site.name + " - Return At Least 1 Item", function sectionsClick() {
+            return driver.chain()
+                .get(siteUrl)
+                .elementByCss('.search-focus', function touchSearch(err, search) {
+                    if (err) throw err;
+                    search.flick(1, 1, 0, function flickCb(err) {
                         if (err) throw err;
-                        search.flick(1, 1, 0, function flickCb(err) {
+                        driver.elementByCss('#search-text', 10000, function (err, el) {
+                            el.sendKeys(wd.SPECIAL_KEYS.Return);
+                        });
+                    })
+                })
+                .waitForElementByCss('.item', 20000, function elementCb(err, el) {
+                    if (err) throw err;
+                    should.exist(el);
+                })
+                .title().should.eventually.include(site.keys.searchFound);
+        });
+
+        it("FACET_SPEC: " + site.name + " - Filter Products", function sectionsClick() {
+            return driver.chain()
+                .waitForElementByCss(".js-toggle-list-facets", 10000)
+                .click()
+                .waitForElementByCss("#facets-panel", 10000, function (err, el) {
+                    el.elementsByCss(".unit", function (err, unitOpts) {
+                        unitOpts[0].elementByCss('.facets-title').click(function (err) {
                             if (err) throw err;
-                            driver.elementByCss('#search-text', 10000, function (err, el) {
-                                el.sendKeys(wd.SPECIAL_KEYS.Return);
-                            });
-                        })
+                            unitOpts[0].elementByCss('li').click();
+                        });
                     })
-                    .waitForElementByCss('.item', 20000, function elementCb(err, el) {
-                        if (err) throw err;
-                        should.exist(el);
-                    })
-                    .title(function (err, title) {
-                        if (title.indexOf(site.keys.searchFound) == -1) {
-                            return next('Title not match');
-                        }
-                        return next(err);
-                    })
-            }
-
-            function searchTest() {
-                try {
-                    actualSearchTest(function (err) {
-                        if (err && tries++ < tries_threshold) {
-                            searchTest();
-                        }
-                        else {
-                            return done(err);
-                        }
-                    });
-                } catch (err) {
-                    if (err && tries++ < tries_threshold)
-                        searchTest();
-                    else return done(err);
-                }
-            }
-
-            searchTest();
+                })
+                .waitForElementByCss(".checked", 10000)
+                .elementByCss('.facets-block__results-btn').click()
+                .url().should.eventually.include(site.keys.facet);
         });
-
-        it("FACET_SPEC: " + site.name + " - Filter Products", function sectionsClick(done){
-            var tries = 0;
-
-            function actualFacetTest(next) {
-                 driver.chain()
-                    .waitForElementByCss(".js-toggle-list-facets", 10000)
-                    .click()
-                    .waitForElementByCss("#facets-panel", 10000, function (err, el) {
-                        el.elementsByCss(".unit", function (err, unitOpts) {
-                            unitOpts[0].elementByCss('.facets-title').click(function (err) {
-                                if (err) throw err;
-                                unitOpts[0].elementByCss('li').click();
-                            });
-                        })
-                    })
-                    .waitForElementByCss(".checked", 10000)
-                    .elementByCss('.facets-block__results-btn').click()
-                    .url(function(err, url){
-                         if (url.indexOf(site.keys.facet) == -1) {
-                             return next('Url not match');
-                         }
-                         return next(err);
-                     })
-            }
-
-            function facetTest() {
-                try {
-                    actualFacetTest(function (err) {
-                        if (err && tries++ < tries_threshold) {
-                            facetTest();
-                        }
-                        else {
-                            return done(err);
-                        }
-                    });
-                } catch (err) {
-                    if (err && tries++ < tries_threshold)
-                        facetTest();
-                    else return done(err);
-                }
-            }
-
-            facetTest();
-
-        });
-    });
+    })
 };
 
 module.exports = iosFacet;

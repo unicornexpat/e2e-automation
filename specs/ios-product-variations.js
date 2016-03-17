@@ -5,12 +5,14 @@ var wd = require("wd"),
 
 var iosProductVariations = function (options, site) {
 
-    describe("==================== THG_IOS_PRODUCT_VARIATIONS: " + site.name + " ====================", function () {
+    describe("THG_IOS_PRODUCT_VARIATIONS: " + site.name, function () {
         this.timeout(100000);
-        var allPassed = true;
-        var driver;
-        var desired = options.desired;
-        var tries_threshold = 2;
+        var allPassed = true,
+            driver,
+            desired = options.desired,
+            tries_threshold = 2,
+            siteUrl = site.urls[options.env];
+
 
 
         before(function () {
@@ -24,7 +26,7 @@ var iosProductVariations = function (options, site) {
             return driver
                 .quit()
                 .finally(function () {
-                    if (process.env.SAUCE) {
+                    if (options.sauceLabs) {
                         return driver.sauceJobStatus(allPassed);
                     }
                 });
@@ -39,7 +41,7 @@ var iosProductVariations = function (options, site) {
 
             function actualSearchTest(next) {
                 driver.chain()
-                    .get(site.urls.live)
+                    .get(siteUrl)
                     .elementByCss('.search-focus', function touchSearch(err, search) {
                         if (err) throw err;
                         search.flick(1, 1, 0, function flickCb(err) {
@@ -82,11 +84,8 @@ var iosProductVariations = function (options, site) {
         });
 
 
-        it("PRODUCT_VARIATIONS_SPEC: " + site.name + " - Add Product Variation to Basket", function itemClick(done) {
-            var tries = 0;
-
-            function actualVariationTest(next) {
-                driver.chain()
+        it("PRODUCT_VARIATIONS_SPEC: " + site.name + " - Add Product Variation to Basket", function() {
+            return driver.chain()
                     .elementByCss('.item', function searchElCb(err, itemEl) {
                         itemEl.elementByCss('a').click();
                     })
@@ -108,29 +107,7 @@ var iosProductVariations = function (options, site) {
                             });
                         })
                     })
-                    .waitForElementByCss('.btn-ajax-basket', 100000, function(err, el){
-                        next(err);
-                    });
-            }
-
-            function variationTest() {
-                try {
-                    actualVariationTest(function (err) {
-                        if (err && tries++ < tries_threshold) {
-                            variationTest();
-                        }
-                        else {
-                            return done(err);
-                        }
-                    });
-                } catch (err) {
-                    if (err && tries++ < tries_threshold)
-                        variationTest();
-                    else return done(err);
-                }
-            }
-
-            variationTest();
+                    .waitForElementByCss('.btn-ajax-basket', 100000);
         });
 
     });

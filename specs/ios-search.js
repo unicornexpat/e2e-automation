@@ -5,13 +5,13 @@ var wd = require("wd");
 
 var iosSearch = function(options, site) {
 
-    describe("==================== THG_IOS_SEARCH: " + site.name+" ====================", function () {
+    describe("THG_IOS_SEARCH: " + site.name, function () {
         this.timeout(100000);
-        var allPassed = true;
-        var driver;
-        var desired = options.desired;
-        var tries_threshold = 2;
-
+        var allPassed = true,
+            driver,
+            desired = options.desired,
+            tries_threshold = 2,
+            siteUrl = site.urls[options.env];
 
         before(function(){
             driver = wd.promiseChainRemote(options.serverConfig);
@@ -24,7 +24,7 @@ var iosSearch = function(options, site) {
             return driver
                 .quit()
                 .finally(function () {
-                    if (process.env.SAUCE) {
+                    if (options.sauceLabs) {
                         return driver.sauceJobStatus(allPassed);
                     }
                 });
@@ -39,7 +39,7 @@ var iosSearch = function(options, site) {
 
             function actualSearchTest(next) {
                 driver.chain()
-                    .get(site.urls.live)
+                    .get(siteUrl)
                     .elementByCss('.search-focus', function touchSearch(err, search) {
                         if (err) throw err;
                         search.flick(1, 1, 0, function flickCb(err) {

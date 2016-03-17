@@ -5,12 +5,13 @@ var wd = require("wd"),
 
 var iosProductVariations = function (options, site) {
 
-    describe("==================== THG_IOS_PAGINATION: " + site.name + " ====================", function () {
+    describe("THG_IOS_PAGINATION: " + site.name, function () {
         this.timeout(100000);
-        var allPassed = true;
-        var driver;
-        var desired = options.desired;
-        var tries_threshold = 2;
+        var allPassed = true,
+            driver,
+            desired = options.desired,
+            tries_threshold = 2,
+            siteUrl = site.urls[options.env];
 
 
         before(function () {
@@ -24,7 +25,7 @@ var iosProductVariations = function (options, site) {
             return driver
                 .quit()
                 .finally(function () {
-                    if (process.env.SAUCE) {
+                    if (options.sauceLabs) {
                         return driver.sauceJobStatus(allPassed);
                     }
                 });
@@ -39,7 +40,7 @@ var iosProductVariations = function (options, site) {
 
             function actualSearchTest(next) {
                 driver.chain()
-                    .get(site.urls.live)
+                    .get(siteUrl)
                     .elementByCss('.search-focus', function touchSearch(err, search) {
                         if (err) throw err;
                         search.flick(1, 1, 0, function flickCb(err) {
@@ -82,44 +83,16 @@ var iosProductVariations = function (options, site) {
         });
 
 
-        it("PAGINATION: " + site.name + " - Next Page", function itemClick(done) {
-            var tries = 0;
-
-            function actualPaginationTest(next) {
-                driver.chain()
-                    .elementByCss('.btn-next', function(err, btnEl){
-                        btnEl.elementByCss('a', function(err, btnA){
-                            if (err) btnEl.click();
-                            else btnA.click();
-                        })
+        it("PAGINATION: " + site.name + " - Next Page", function itemClick() {
+            return driver.chain()
+                .elementByCss('.btn-next', function (err, btnEl) {
+                    btnEl.elementByCss('a', function (err, btnA) {
+                        if (err) btnEl.click();
+                        else btnA.click();
                     })
-                    .waitForElementByCss('.btn-previous', 10000)
-                    .url(function(err, url){
-                        if (url.indexOf(site.keys.pagination) == -1) {
-                            return next('Title not match');
-                        }
-                        return next(err);
-                    })
-            }
-
-            function paginationTest() {
-                try {
-                    actualPaginationTest(function (err) {
-                        if (err && tries++ < tries_threshold) {
-                            paginationTest();
-                        }
-                        else {
-                            return done(err);
-                        }
-                    });
-                } catch (err) {
-                    if (err && tries++ < tries_threshold)
-                        paginationTest();
-                    else return done(err);
-                }
-            }
-
-            paginationTest();
+                })
+                .waitForElementByCss('.btn-previous', 10000)
+                .url().should.eventually.include(site.keys.pagination);
         });
 
     });

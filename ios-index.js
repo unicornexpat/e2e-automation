@@ -1,4 +1,3 @@
-"use strict";
 var caps = require('./config/caps');
 
 var config = require('./config/index'),
@@ -6,8 +5,6 @@ var config = require('./config/index'),
     setter = new Setter(config),
     iosRunner = require('./specs/ios-runner');
 
-setter.removeSpec('iosFacet')
-    .setTarget(caps.simulator.iPhone5S_ios92)
-    .useSauceLabs();
+setter.runOnlySite('beautyExpert');
 
 iosRunner(config);
