@@ -35,6 +35,6 @@
   },
   "private": true,
   "scripts": {
-    "e2e-ios-index": "mocha ./ios-index.js --reporter mochawesome --reporter-options reportDir=reports/,reportName=ios-index-report,reportTitle=Elysium-E2E-iOS-Tests",
+    "e2e-ios-index": "mocha ./ios-index.js --reporter mochawesome --reporter-options reportDir=reports/,reportName=ios-index-report,reportTitle=Elysium-E2E-iOS-Tests"
   }
 }
