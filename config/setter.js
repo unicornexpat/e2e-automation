@@ -26,6 +26,7 @@ setter.prototype = {
 
     setTarget: function(target){
         this.config.desired = target;
+        this.config.serverConfig = require('./appium-servers').sauce.server1;
         return this;
     },
 

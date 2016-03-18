@@ -5,6 +5,6 @@ var config = require('./config/index'),
     setter = new Setter(config),
     iosRunner = require('./specs/ios-runner');
 
-setter.runOnlySite('beautyExpert');
-
+setter.useSauceLabs().setTarget(caps.simulator.iPhone5S_ios92);
+//console.log(config);
 iosRunner(config);

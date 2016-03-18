@@ -14,14 +14,14 @@
       <div class="container">
         <div class="report-info-cnt">
           <h1 class="report-title">elysium-e2e-mobile</h1>
-          <h3 class="report-date">Thursday, March 17 2016, 05:11pm</h3>
+          <h3 class="report-date">Friday, March 18 2016, 10:49am</h3>
         </div>
         <div class="quick-summary-cnt">
             <ul class="list-unstyled quick-summary">
-              <li class="qs-item summary-duration" title="Duration">1:57<span>M</span></li>
-              <li class="qs-item summary-suites" title="Suites">4</li>
-              <li class="qs-item summary-tests" title="Tests">6</li>
-              <li class="qs-item summary-passes" title="Passed" data-filter="passed">6</li>
+              <li class="qs-item summary-duration" title="Duration">0<span>MS</span></li>
+              <li class="qs-item summary-suites" title="Suites">0</li>
+              <li class="qs-item summary-tests" title="Tests">0</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">0</li>
               <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
               <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
             </ul>        </div>
@@ -33,19 +33,19 @@
       <div class="container">
           <div class="row">
             <div class="summary-col summary-duration">
-              <h1 class="summary-count">1:57<span>M</span></h1>
-              <h4 class="summary-label">M</h4>
+              <h1 class="summary-count">0<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
             </div>
             <div class="summary-col summary-suites" title="Suites">
-              <h1 class="summary-count">4</h1>
+              <h1 class="summary-count">0</h1>
               <h4 class="summary-label">Suites</h4>
             </div>
             <div class="summary-col summary-tests" title="Tests">
-              <h1 class="summary-count">6</h1>
+              <h1 class="summary-count">0</h1>
               <h4 class="summary-label">Tests</h4>
             </div>
             <div class="summary-col summary-passes" data-filter="passed" title="Passed">
-              <h1 class="summary-count">6</h1>
+              <h1 class="summary-count">0</h1>
               <h4 class="summary-label">Passed</h4>
             </div>
             <div class="summary-col summary-failures" data-filter="failed" title="Failed">
@@ -61,241 +61,13 @@
     <div class="statusbar">
       <div class="container">
           <div class="row">
-            <div class="status-item status-item-pending-pct">0% Pending</div>
-            <div class="status-item status-item-passing-pct success">100% Passing</div>
+            <div class="status-item status-item-pending-pct">NaN% Pending</div>
+            <div class="status-item status-item-passing-pct success">NaN% Passing</div>
           </div>      </div>
     </div>
 
     <!-- Suites -->
     <div class="details container">
-            <section class="suite-wrap">
-          <div id="542fe427-70a5-49c8-9663-9951f3474716" class="suite has-tests has-passed">
-            <h3 class="suite-title">THG_IOS_FACET: Beauty Expert</h3>
-            <h5 class="suite-filename">/ios-index.js</h5>
-            <!-- Suite Chart -->
-            <div class="suite-chart-wrap">
-              <canvas id="542fe427-70a5-49c8-9663-9951f3474716" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
-            </div>
-            <div class="suite-data-wrap">
-              <!-- Suite Summary -->
-              <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">11.128 s</li>
-                <li class="suite-summary-item tests">2</li>
-                <li class="suite-summary-item passed">2</li>
-                <li class="suite-summary-item failed">0</li>
-                <li class="suite-summary-item pending">0</li>
-              </ul>
-              <!-- Test Info -->
-              <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#542fe427-70a5-49c8-9663-9951f3474716-test-list">
-                  <h4 class="suite-test-header-title">Tests</h4>
-                </div>
-                <div id="542fe427-70a5-49c8-9663-9951f3474716-test-list" class="list-group test-list collapse in">
-                    <div id="b00cce73-95e4-45d8-90b9-1646228968fb" class="list-group-item test passed">
-          <!-- Test Heading -->
-          <div class="test-heading">
-            <h4 class="test-title">
-              <span class="text-muted hidden"> it </span>
-              SEARCH_SPEC: Beauty Expert - Return At Least 1 Item
-            </h4>
-            <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b00cce73-95e4-45d8-90b9-1646228968fb > .test-code.collapse">Code</button>
-              <span class="test-duration slow">10.334 s</span>
-            </div>
-          </div>
-          <!-- Test Errors -->
-          <!-- Test Code -->
-          <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sectionsClick</span>(<span class="hljs-params"></span>) </span>{<br>            <span class="hljs-keyword">return</span> driver.chain()<br>                .get(siteUrl)<br>                .elementByCss(<span class="hljs-string">'.search-focus'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">touchSearch</span>(<span class="hljs-params">err, search</span>) </span>{<br>                    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                    search.flick(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flickCb</span>(<span class="hljs-params">err</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                        driver.elementByCss(<span class="hljs-string">'#search-text'</span>, <span class="hljs-number">10000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, el</span>) </span>{<br>                            el.sendKeys(wd.SPECIAL_KEYS.Return);<br>                        });<br>                    })<br>                })<br>                .waitForElementByCss(<span class="hljs-string">'.item'</span>, <span class="hljs-number">20000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">elementCb</span>(<span class="hljs-params">err, el</span>) </span>{<br>                    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                    should.exist(el);<br>                })<br>                .title().should.eventually.include(site.keys.searchFound);</code></pre>
-          </div>
-          <!-- Test Error Stack -->
-        </div>            <div id="a7169d57-50c9-40a8-811e-291e347ff2fa" class="list-group-item test passed">
-          <!-- Test Heading -->
-          <div class="test-heading">
-            <h4 class="test-title">
-              <span class="text-muted hidden"> it </span>
-              FACET_SPEC: Beauty Expert - Filter Products
-            </h4>
-            <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a7169d57-50c9-40a8-811e-291e347ff2fa > .test-code.collapse">Code</button>
-              <span class="test-duration slow">794 ms</span>
-            </div>
-          </div>
-          <!-- Test Errors -->
-          <!-- Test Code -->
-          <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sectionsClick</span>(<span class="hljs-params"></span>) </span>{<br>            <span class="hljs-keyword">return</span> driver.chain()<br>                .waitForElementByCss(<span class="hljs-string">".js-toggle-list-facets"</span>, <span class="hljs-number">10000</span>)<br>                .click()<br>                .waitForElementByCss(<span class="hljs-string">"#facets-panel"</span>, <span class="hljs-number">10000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, el</span>) </span>{<br>                    el.elementsByCss(<span class="hljs-string">".unit"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, unitOpts</span>) </span>{<br>                        unitOpts[<span class="hljs-number">0</span>].elementByCss(<span class="hljs-string">'.facets-title'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{<br>                            <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                            unitOpts[<span class="hljs-number">0</span>].elementByCss(<span class="hljs-string">'li'</span>).click();<br>                        });<br>                    })<br>                })<br>                .waitForElementByCss(<span class="hljs-string">".checked"</span>, <span class="hljs-number">10000</span>)<br>                .elementByCss(<span class="hljs-string">'.facets-block__results-btn'</span>).click()<br>                .url().should.eventually.include(site.keys.facet);</code></pre>
-          </div>
-          <!-- Test Error Stack -->
-        </div>        </div>
-              </div>
-            </div>
-        
-        
-          </div>
-        </section>
-            <section class="suite-wrap">
-          <div id="5b298549-8599-41da-9b11-41d6e94f0873" class="suite has-tests has-passed">
-            <h3 class="suite-title">THG_IOS_MENU: Beauty Expert</h3>
-            <h5 class="suite-filename">/ios-index.js</h5>
-            <!-- Suite Chart -->
-            <div class="suite-chart-wrap">
-              <canvas id="5b298549-8599-41da-9b11-41d6e94f0873" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
-            </div>
-            <div class="suite-data-wrap">
-              <!-- Suite Summary -->
-              <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">20.987 s</li>
-                <li class="suite-summary-item tests">1</li>
-                <li class="suite-summary-item passed">1</li>
-                <li class="suite-summary-item failed">0</li>
-                <li class="suite-summary-item pending">0</li>
-              </ul>
-              <!-- Test Info -->
-              <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#5b298549-8599-41da-9b11-41d6e94f0873-test-list">
-                  <h4 class="suite-test-header-title">Tests</h4>
-                </div>
-                <div id="5b298549-8599-41da-9b11-41d6e94f0873-test-list" class="list-group test-list collapse in">
-                    <div id="c8bd4d9a-8ed6-4655-85a4-4c9039851d8b" class="list-group-item test passed">
-          <!-- Test Heading -->
-          <div class="test-heading">
-            <h4 class="test-title">
-              <span class="text-muted hidden"> it </span>
-              MENU_SPEC: Beauty Expert - Open and Close Menu
-            </h4>
-            <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c8bd4d9a-8ed6-4655-85a4-4c9039851d8b > .test-code.collapse">Code</button>
-              <span class="test-duration slow">20.987 s</span>
-            </div>
-          </div>
-          <!-- Test Errors -->
-          <!-- Test Code -->
-          <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-keyword">return</span> driver.chain()<br>    .get(siteUrl)<br>    .elementByCss(<span class="hljs-string">'.header-menu-icon'</span>).flick(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>)<br>    .waitForElementByCss(<span class="hljs-string">'.slide-out-navigation'</span>, <span class="hljs-number">20000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, el</span>) </span>{<br>        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>        should.exist(el);<br>    })<br>    .elementByCss(<span class="hljs-string">'.header-menu-icon'</span>)<br>    .flick(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>)<br>    .flick(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>)<br>    .elementByCss(<span class="hljs-string">'.account-list-item'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, el</span>) </span>{<br>        el.elementByCss(<span class="hljs-string">'a'</span>).click();<br>    })<br>    .waitForElementByCss(<span class="hljs-string">'.login-existing-user-wrapper'</span>, <span class="hljs-number">20000</span>)<br>    .title().should.eventually.include(site.keys.logIn);</code></pre>
-          </div>
-          <!-- Test Error Stack -->
-        </div>        </div>
-              </div>
-            </div>
-        
-        
-          </div>
-        </section>
-            <section class="suite-wrap">
-          <div id="300882fa-9a00-4ee0-979c-edd0e504030b" class="suite has-tests has-passed">
-            <h3 class="suite-title">THG_IOS_PRODUCT_VARIATIONS: Beauty Expert</h3>
-            <h5 class="suite-filename">/ios-index.js</h5>
-            <!-- Suite Chart -->
-            <div class="suite-chart-wrap">
-              <canvas id="300882fa-9a00-4ee0-979c-edd0e504030b" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
-            </div>
-            <div class="suite-data-wrap">
-              <!-- Suite Summary -->
-              <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">10.884 s</li>
-                <li class="suite-summary-item tests">2</li>
-                <li class="suite-summary-item passed">2</li>
-                <li class="suite-summary-item failed">0</li>
-                <li class="suite-summary-item pending">0</li>
-              </ul>
-              <!-- Test Info -->
-              <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#300882fa-9a00-4ee0-979c-edd0e504030b-test-list">
-                  <h4 class="suite-test-header-title">Tests</h4>
-                </div>
-                <div id="300882fa-9a00-4ee0-979c-edd0e504030b-test-list" class="list-group test-list collapse in">
-                    <div id="4c24ab4f-23f8-4a8f-a131-87ceb9755e88" class="list-group-item test passed">
-          <!-- Test Heading -->
-          <div class="test-heading">
-            <h4 class="test-title">
-              <span class="text-muted hidden"> it </span>
-              SEARCH_SPEC: Beauty Expert - Return At Least 1 Item
-            </h4>
-            <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#4c24ab4f-23f8-4a8f-a131-87ceb9755e88 > .test-code.collapse">Code</button>
-              <span class="test-duration slow">9.295 s</span>
-            </div>
-          </div>
-          <!-- Test Errors -->
-          <!-- Test Code -->
-          <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sectionsClick</span>(<span class="hljs-params">done</span>) </span>{<br>            <span class="hljs-keyword">var</span> tries = <span class="hljs-number">0</span>;<br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">actualSearchTest</span>(<span class="hljs-params">next</span>) </span>{<br>                driver.chain()<br>                    .get(siteUrl)<br>                    .elementByCss(<span class="hljs-string">'.search-focus'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">touchSearch</span>(<span class="hljs-params">err, search</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                        search.flick(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flickCb</span>(<span class="hljs-params">err</span>) </span>{<br>                            <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                            driver.elementByCss(<span class="hljs-string">'#search-text'</span>, <span class="hljs-number">10000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, el</span>) </span>{<br>                                el.sendKeys(wd.SPECIAL_KEYS.Return);<br>                            });<br>                        })<br>                    })<br>                    .waitForElementByCss(<span class="hljs-string">'.item'</span>, <span class="hljs-number">20000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">elementCb</span>(<span class="hljs-params">err, el</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                        should.exist(el);<br>                    })<br>                    .title(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, title</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (title.indexOf(site.keys.searchFound) == -<span class="hljs-number">1</span>) {<br>                            <span class="hljs-keyword">return</span> next(<span class="hljs-string">'Title not match'</span>);<br>                        }<br>                        <span class="hljs-keyword">return</span> next(err);<br>                    })<br>            }<br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">searchTest</span>(<span class="hljs-params"></span>) </span>{<br>                <span class="hljs-keyword">try</span> {<br>                    actualSearchTest(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (err &amp;&amp; tries++ <span class="xml"><span class="hljs-tag">&lt; <span class="hljs-attribute">tries_threshold</span>) {<br>                            <span class="hljs-attribute">searchTest</span>();<br>                        }<br>                        <span class="hljs-attribute">else</span> {<br>                            <span class="hljs-attribute">return</span> <span class="hljs-attribute">done</span>(<span class="hljs-attribute">err</span>);<br>                        }<br>                    });<br>                } <span class="hljs-attribute">catch</span> (<span class="hljs-attribute">err</span>) {<br>                    <span class="hljs-attribute">if</span> (<span class="hljs-attribute">err</span> &amp;&amp; <span class="hljs-attribute">tries</span>++ &lt; <span class="hljs-attribute">tries_threshold</span>)<br>                        <span class="hljs-attribute">searchTest</span>();<br>                    <span class="hljs-attribute">else</span> <span class="hljs-attribute">return</span> <span class="hljs-attribute">done</span>(<span class="hljs-attribute">err</span>);<br>                }<br>            }<br>            <span class="hljs-attribute">searchTest</span>();</span></span></code></pre>
-          </div>
-          <!-- Test Error Stack -->
-        </div>            <div id="02bd2b01-9ca6-4c73-96fb-23308e2e6c4c" class="list-group-item test passed">
-          <!-- Test Heading -->
-          <div class="test-heading">
-            <h4 class="test-title">
-              <span class="text-muted hidden"> it </span>
-              PRODUCT_VARIATIONS_SPEC: Beauty Expert - Add Product Variation to Basket
-            </h4>
-            <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#02bd2b01-9ca6-4c73-96fb-23308e2e6c4c > .test-code.collapse">Code</button>
-              <span class="test-duration slow">1.589 s</span>
-            </div>
-          </div>
-          <!-- Test Errors -->
-          <!-- Test Code -->
-          <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-keyword">return</span> driver.chain()<br>        .elementByCss(<span class="hljs-string">'.item'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">searchElCb</span>(<span class="hljs-params">err, itemEl</span>) </span>{<br>            itemEl.elementByCss(<span class="hljs-string">'a'</span>).click();<br>        })<br>        .waitForElementByCss(<span class="hljs-string">'.productoptions'</span>, <span class="hljs-number">100000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">waitCb</span>(<span class="hljs-params">err, el</span>) </span>{<br>            el.elementsByCss(<span class="hljs-string">'form'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">elCb</span>(<span class="hljs-params">err, forms</span>) </span>{<br>                <span class="hljs-keyword">async</span>.forEachOfSeries(forms, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">formIter</span>(<span class="hljs-params">form, key, callback</span>) </span>{<br>                    form.elementsByCss(<span class="hljs-string">'option'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, options</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (options.length &gt; <span class="hljs-number">1</span>) {<br>                            options[<span class="hljs-number">1</span>].click();<br>                        }<br>                        <span class="hljs-keyword">else</span> {<br>                            options[<span class="hljs-number">0</span>].click();<br>                        }<br>                        callback(err);<br>                    });<br>                }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{<br>                    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                    driver.elementByCss(<span class="hljs-string">'.buy-button'</span>).click();<br>                });<br>            })<br>        })<br>        .waitForElementByCss(<span class="hljs-string">'.btn-ajax-basket'</span>, <span class="hljs-number">100000</span>);</code></pre>
-          </div>
-          <!-- Test Error Stack -->
-        </div>        </div>
-              </div>
-            </div>
-        
-        
-          </div>
-        </section>
-            <section class="suite-wrap">
-          <div id="e2ffbf71-876f-48bd-a0d1-207f33facba4" class="suite has-tests has-passed">
-            <h3 class="suite-title">==================== THG_IOS_SEARCH: Beauty Expert ====================</h3>
-            <h5 class="suite-filename">/ios-index.js</h5>
-            <!-- Suite Chart -->
-            <div class="suite-chart-wrap">
-              <canvas id="e2ffbf71-876f-48bd-a0d1-207f33facba4" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
-            </div>
-            <div class="suite-data-wrap">
-              <!-- Suite Summary -->
-              <ul class="suite-summary list-unstyled">
-                <li class="suite-summary-item duration">9.172 s</li>
-                <li class="suite-summary-item tests">1</li>
-                <li class="suite-summary-item passed">1</li>
-                <li class="suite-summary-item failed">0</li>
-                <li class="suite-summary-item pending">0</li>
-              </ul>
-              <!-- Test Info -->
-              <div class="suite-test-wrap">
-                <div class="suite-test-header" data-toggle="collapse" data-target="#e2ffbf71-876f-48bd-a0d1-207f33facba4-test-list">
-                  <h4 class="suite-test-header-title">Tests</h4>
-                </div>
-                <div id="e2ffbf71-876f-48bd-a0d1-207f33facba4-test-list" class="list-group test-list collapse in">
-                    <div id="14cb42f7-d30c-4bbd-b461-927645064d26" class="list-group-item test passed">
-          <!-- Test Heading -->
-          <div class="test-heading">
-            <h4 class="test-title">
-              <span class="text-muted hidden"> it </span>
-              SEARCH_SPEC: Beauty Expert - Return At Least 1 Item
-            </h4>
-            <div class="pull-right">
-              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#14cb42f7-d30c-4bbd-b461-927645064d26 > .test-code.collapse">Code</button>
-              <span class="test-duration slow">9.172 s</span>
-            </div>
-          </div>
-          <!-- Test Errors -->
-          <!-- Test Code -->
-          <div class="test-code collapse">
-            <pre><code class="hljs javascript small"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sectionsClick</span>(<span class="hljs-params">done</span>) </span>{<br>            <span class="hljs-keyword">var</span> tries = <span class="hljs-number">0</span>;<br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">actualSearchTest</span>(<span class="hljs-params">next</span>) </span>{<br>                driver.chain()<br>                    .get(siteUrl)<br>                    .elementByCss(<span class="hljs-string">'.search-focus'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">touchSearch</span>(<span class="hljs-params">err, search</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                        search.flick(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">flickCb</span>(<span class="hljs-params">err</span>) </span>{<br>                            <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                            driver.elementByCss(<span class="hljs-string">'#search-text'</span>, <span class="hljs-number">10000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, el</span>) </span>{<br>                                el.sendKeys(wd.SPECIAL_KEYS.Return);<br>                            });<br>                        })<br>                    })<br>                    .waitForElementByCss(<span class="hljs-string">'.item'</span>, <span class="hljs-number">20000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">elementCb</span>(<span class="hljs-params">err, el</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;<br>                        should.exist(el);<br>                    })<br>                    .title(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, title</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (title.indexOf(site.keys.searchFound) == -<span class="hljs-number">1</span>) {<br>                            <span class="hljs-keyword">return</span> next(<span class="hljs-string">'Title not match'</span>);<br>                        }<br>                        <span class="hljs-keyword">return</span> next(err);<br>                    })<br>            }<br>            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">searchTest</span>(<span class="hljs-params"></span>) </span>{<br>                <span class="hljs-keyword">try</span> {<br>                    actualSearchTest(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{<br>                        <span class="hljs-keyword">if</span> (err &amp;&amp; tries++ <span class="xml"><span class="hljs-tag">&lt; <span class="hljs-attribute">tries_threshold</span>) {<br>                            <span class="hljs-attribute">searchTest</span>();<br>                        }<br>                        <span class="hljs-attribute">else</span> {<br>                            <span class="hljs-attribute">return</span> <span class="hljs-attribute">done</span>(<span class="hljs-attribute">err</span>);<br>                        }<br>                    });<br>                } <span class="hljs-attribute">catch</span> (<span class="hljs-attribute">err</span>) {<br>                    <span class="hljs-attribute">if</span> (<span class="hljs-attribute">err</span> &amp;&amp; <span class="hljs-attribute">tries</span>++ &lt; <span class="hljs-attribute">tries_threshold</span>)<br>                        <span class="hljs-attribute">searchTest</span>();<br>                    <span class="hljs-attribute">else</span> <span class="hljs-attribute">return</span> <span class="hljs-attribute">done</span>(<span class="hljs-attribute">err</span>);<br>                }<br>            }<br>            <span class="hljs-attribute">searchTest</span>();</span></span></code></pre>
-          </div>
-          <!-- Test Error Stack -->
-        </div>        </div>
-              </div>
-            </div>
-        
-        
-          </div>
-        </section>
     </div>
 
     <footer>

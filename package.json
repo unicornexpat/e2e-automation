@@ -24,15 +24,17 @@
   "devDependencies": {
     "chai": "2.2.0",
     "chai-as-promised": "^5.0.0",
-    "colors": "^1.0.3",
-    "express": "^4.12.3",
-    "mochawesome": "^1.3.0",
-    "q": "^2.0.2",
-    "underscore": "^1.8.3",
-    "wd": "^0.3.11",
-    "async": "^1.5.2"
+    "colors": "1.0.3",
+    "express": "4.12.3",
+    "mocha": "2.4.5",
+    "mochawesome": "1.3.0",
+    "q": "2.0.2",
+    "underscore": "1.8.3",
+    "wd": "0.3.11",
+    "async": "1.5.2"
   },
-  "dependencies": {
-    "async": "^1.5.2"
+  "private": true,
+  "scripts": {
+    "e2e-ios-index": "mocha ./ios-index.js --reporter mochawesome --reporter-options reportDir=reports/,reportName=ios-index-report,reportTitle=Elysium-E2E-iOS-Tests",
   }
 }
