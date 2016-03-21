@@ -1,8 +1,9 @@
 var specs = {
-    iosFacet: require('./ios-facet'),
-    iosMenu: require('./ios-menu'),
-    iosProductVariation: require('./ios-product-variations'),
-    iosSearch: require('./ios-search')
+    facet: require('./facet'),
+    menu: require('./menu'),
+    productVariation: require('./variation'),
+    search: require('./search'),
+    pagination: require('./pagination')
 };
 
 module.exports = specs;

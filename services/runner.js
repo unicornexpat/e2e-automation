@@ -26,21 +26,12 @@ var iosRunner = function(config) {
     testExc(config.specs, config.sites, options);
 };
 
-function testExc(specs, sites, options){
-    async.forEachOf(sites, function (site, key, callback) {
-        async.forEachOfSeries(specs, function(spec, key, next){
-            if(site[key] != false){
-                spec(options, site);
-            }
-            next();
-        }, function(err){
-            if(err) console.error(err.message);
-            callback();
-        });
-    }, function (err) {
-        if (err) console.error(err.message);
+function testExc(specs, sites, options) {
+    async.forEachOf(specs, function(spec, key, next){
+        spec(options, sites);
+    }, function(err){
+        if (err) console.log(err);
     })
 }
-
 
 module.exports = iosRunner;

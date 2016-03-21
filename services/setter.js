@@ -4,6 +4,11 @@ var setter = function(config){
 };
 
 setter.prototype = {
+    setHost: function(host) {
+        this.config.serverConfig = host;
+        return this;
+    },
+
     setEnv: function(env) {
         this.config.env = env;
         return this;
@@ -11,6 +16,7 @@ setter.prototype = {
 
     useSauceLabs: function(){
         this.config.sauceLabs = true;
+        this.config.serverConfig = require('./appium-servers').sauce.server1;
         return this;
     },
 
@@ -26,7 +32,6 @@ setter.prototype = {
 
     setTarget: function(target){
         this.config.desired = target;
-        this.config.serverConfig = require('./appium-servers').sauce.server1;
         return this;
     },
 

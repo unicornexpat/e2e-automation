@@ -278,7 +278,7 @@ sites.powerMan = {
     name: 'PowerMan',
     bundle: undefined,
     iosFacet: false,
-    pagination: false,
+    iosPagination: false,
     urls: {
         dev: 'http://m.pminten.pl.thehutgroup.thg/',
         live: 'http://m.powerman.co.uk/'
@@ -360,7 +360,7 @@ sites.growGorgeousUS = {
     name: 'Grow Gorgeous US',
     bundle: undefined,
     iosFacet: true,
-    pagination: false,
+    iosPagination: false,
     urls: {
         dev: 'http://m.growgorgeousus.pl.thehutgroup.thg',
         live: 'http://m.growgorgeous.com/'
@@ -376,7 +376,7 @@ sites.growGorgeousUS = {
 sites.growGorgeousUK = {
     name: 'Grow Gorgeous UK',
     bundle: undefined,
-    pagination: false,
+    iosPagination: false,
     iosFacet: true,
     urls: {
         dev: 'http://m.growgorgeousgb.pl.thehutgroup.thg',
@@ -393,7 +393,7 @@ sites.growGorgeousUK = {
 sites.lancer = {
     name: 'Lancer Skin Care',
     bundle: undefined,
-    pagination: false,
+    iosPagination: false,
     iosFacet: true,
     urls: {
         dev: 'http://m.lanceren.pl.thehutgroup.thg',
