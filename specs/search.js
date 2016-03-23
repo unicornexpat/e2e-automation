@@ -11,7 +11,9 @@ var iosSearch = function(options, sites) {
             driver;
 
         before(function () {
+            options.desired.name = 'THG_SEARCH_SUITE: ' + options.os;
             driver = driverInit(options);
+
         });
 
         after(function () {
@@ -28,16 +30,17 @@ var iosSearch = function(options, sites) {
             masterPassed = masterPassed && this.currentTest.state === 'passed';
         });
 
-        Object.keys(sites).forEach(function (key) {
+        Object.keys(sites).forEach(function(key) {
             var site = sites[key];
 
-            describe('MENU: ' + site.name, function () {
+            describe('SEARCH_SPEC: ' + site.name, function () {
                 var allPassed = true;
 
                 before(function () {
                     driver.status(function (err, status) {
-                        if ((status.isShuttingDown != false && options.sauceLabs != true) || (status.details.status != 'available' && options.sauceLabs == true)) {
+                        if ((status.isShuttingDown != false && options.sauceLabs != true && options.os == 'iOS') || (status.details.status != 'available' && options.sauceLabs == true)) {
                             console.log('IMITATING A NEW SESSION');
+                            driver.quit();
                             driver = driverInit(options);
                         }
                     });
@@ -47,7 +50,7 @@ var iosSearch = function(options, sites) {
                     allPassed = allPassed && this.currentTest.state === 'passed';
                 });
 
-                it("SEARCH_SPEC: " + site.name + " - Return At Least 1 Item", function sectionsClick() {
+                it("SEARCH: " + site.name + " - Return At Least 1 Item", function sectionsClick() {
                     return driver.chain()
                         .get(site.urls[options.env])
                         .elementByCss('.search-focus', function touchSearch(err, search) {
@@ -59,6 +62,7 @@ var iosSearch = function(options, sites) {
                                 });
                             })
                         })
+                        .sleep(100)
                         .waitForElementByCss('.item', 20000, function elementCb(err, el) {
                             if (err) throw err;
                             should.exist(el);

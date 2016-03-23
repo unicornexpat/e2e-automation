@@ -8,7 +8,8 @@ var index = {
     sites: require('./sites'),
     specs: require('../specs/index'),
     serverConfig: require('./appium-servers').local.host1,
-    desired: _.clone(require("./caps").device.iIphone6Plus)
+    desired: _.clone(require("./caps").device.iIphone6Plus),
+    os: 'iOS'
 };
 
 module.exports = index;

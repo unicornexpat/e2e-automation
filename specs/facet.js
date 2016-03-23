@@ -11,6 +11,7 @@ var iosFacet = function (options, sites) {
             driver;
 
         before(function () {
+            options.desired.name = 'THG_FACET_SUITE: ' + options.os;
             driver = driverInit(options);
         });
 
@@ -28,16 +29,17 @@ var iosFacet = function (options, sites) {
             masterPassed = masterPassed && this.currentTest.state === 'passed';
         });
 
-        Object.keys(sites).forEach(function (key) {
+        Object.keys(sites).forEach(function(key) {
             var site = sites[key];
 
-            describe('MENU: ' + site.name, function () {
+            describe('FACET_SPEC: ' + site.name, function () {
                 var allPassed = true;
 
                 before(function () {
                     driver.status(function (err, status) {
-                        if ((status.isShuttingDown != false && options.sauceLabs != true) || (status.details.status != 'available' && options.sauceLabs == true)) {
+                        if ((status.isShuttingDown != false && options.sauceLabs != true && options.os == 'iOS') || (status.details.status != 'available' && options.sauceLabs == true)) {
                             console.log('IMITATING A NEW SESSION');
+                            driver.quit();
                             driver = driverInit(options);
                         }
                     });
@@ -47,7 +49,7 @@ var iosFacet = function (options, sites) {
                     allPassed = allPassed && this.currentTest.state === 'passed';
                 });
 
-                it("SEARCH_SPEC: " + site.name + " - Return At Least 1 Item", function sectionsClick() {
+                it("SEARCH: " + site.name + " - Return At Least 1 Item", function sectionsClick() {
                     return driver.chain()
                         .get(site.urls[options.env])
                         .elementByCss('.search-focus', function touchSearch(err, search) {
@@ -66,7 +68,7 @@ var iosFacet = function (options, sites) {
                         .title().should.eventually.include(site.keys.searchFound);
                 });
 
-                it("FACET_SPEC: " + site.name + " - Filter Products", function sectionsClick() {
+                it("FACET: " + site.name + " - Filter Products", function sectionsClick() {
                     return driver.chain()
                         .waitForElementByCss(".js-toggle-list-facets", 10000)
                         .click()

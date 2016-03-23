@@ -1,3 +1,6 @@
+var servers = require('../config/appium-servers'),
+    caps = require('../config/caps');
+
 
 var setter = function(config){
     this.config = config;
@@ -14,9 +17,16 @@ setter.prototype = {
         return this;
     },
 
+    setOs: function(os) {
+        this.config.os = os;
+        this.config.desired = caps.device.nexus5;
+        this.config.serverConfig = servers.local.host2;
+        return this;
+    },
+
     useSauceLabs: function(){
         this.config.sauceLabs = true;
-        this.config.serverConfig = require('./appium-servers').sauce.server1;
+        this.config.serverConfig = servers.sauce.server1;
         return this;
     },
 
@@ -37,21 +47,21 @@ setter.prototype = {
 
     runOnlySpec: function(specName){
         var that = this;
-;       Object.keys(this.config.specs).forEach(function(key) {
+;       for(var key in this.config.specs) {
             if (key != specName) {
                delete that.config.specs[key];
             }
-        });
+        }
         return this
     },
 
     runOnlySite: function(siteName){
         var that = this;
-        Object.keys(this.config.sites).forEach(function(key) {
+        for(var key in this.config.sites) {
             if (key != siteName) {
                 delete that.config.sites[key];
             }
-        });
+        }
         return this
     }
 };

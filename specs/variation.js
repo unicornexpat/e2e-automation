@@ -11,6 +11,7 @@ var iosProductVariations = function (options, sites) {
             driver;
 
         before(function () {
+            options.desired.name = 'THG_PRODUCT_VARIATION: ' + options.os;
             driver = driverInit(options);
         });
 
@@ -28,16 +29,17 @@ var iosProductVariations = function (options, sites) {
             masterPassed = masterPassed && this.currentTest.state === 'passed';
         });
 
-        Object.keys(sites).forEach(function (key) {
+        Object.keys(sites).forEach(function(key) {
             var site = sites[key];
 
-            describe('MENU: ' + site.name, function () {
+            describe('PRODUCT_VARIATION_SPEC: ' + site.name, function () {
                 var allPassed = true;
 
                 before(function () {
                     driver.status(function (err, status) {
-                        if ((status.isShuttingDown != false && options.sauceLabs != true) || (status.details.status != 'available' && options.sauceLabs == true)) {
+                        if ((status.isShuttingDown != false && options.sauceLabs != true && options.os == 'iOS') || (status.details.status != 'available' && options.sauceLabs == true)) {
                             console.log('IMITATING A NEW SESSION');
+                            driver.quit();
                             driver = driverInit(options);
                         }
                     });
@@ -47,7 +49,7 @@ var iosProductVariations = function (options, sites) {
                     allPassed = allPassed && this.currentTest.state === 'passed';
                 });
 
-                it("SEARCH_SPEC: " + site.name + " - Return At Least 1 Item", function sectionsClick() {
+                it("SEARCH: " + site.name + " - Return At Least 1 Item", function sectionsClick() {
                     return driver.chain()
                         .get(site.urls[options.env])
                         .elementByCss('.search-focus', function touchSearch(err, search) {
@@ -66,7 +68,7 @@ var iosProductVariations = function (options, sites) {
                         .title().should.eventually.include(site.keys.searchFound);
                 });
 
-                it("PRODUCT_VARIATIONS_SPEC: " + site.name + " - Add Product Variation to Basket", function () {
+                it("VARIATIONS: " + site.name + " - Add Product Variation to Basket", function () {
                     return driver.chain()
                         .elementByCss('.item', function searchElCb(err, itemEl) {
                             itemEl.elementByCss('a').click();
