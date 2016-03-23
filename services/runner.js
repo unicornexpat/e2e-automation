@@ -7,11 +7,12 @@ var runner = function(config) {
     var serverConfig = config.serverConfig,
         desired = config.desired;
 
-    if (config.useSauceLabs) {
+    if (config.sauceLabs) {
         desired.name = 'THG_Mobile_Automation';
         desired.tags = ['THG_AUTOMATION_EN'];
         serverConfig = serverConfigs.sauce.server1;
         if(config.env == 'dev'){
+            console.log('STARTING SAUCE CONNECT');
             sauceConnect();
         }
     }
