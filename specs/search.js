@@ -62,7 +62,7 @@ var iosSearch = function(options, sites) {
                                 });
                             })
                         })
-                        .sleep(100)
+                        .sleep(1000)
                         .waitForElementByCss('.item', 20000, function elementCb(err, el) {
                             if (err) throw err;
                             should.exist(el);

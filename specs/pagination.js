@@ -61,6 +61,7 @@ var iosPagination = function (options, sites) {
                                 });
                             })
                         })
+                        .sleep(1000)
                         .waitForElementByCss('.item', 20000, function elementCb(err, el) {
                             if (err) throw err;
                             should.exist(el);

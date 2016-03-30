@@ -25,19 +25,21 @@ var runner = function(config) {
         os: config.os
     };
 
-    testExc(config.specs, config.sites, options);
+    testExc(config.specs, config.sites, options, 1);
 };
 
-function testExc(specs, sites, options) {
-    for (var specKey in specs) {
-        var specSites = {};
-        for (var siteKey in sites) {
-            var site = sites[siteKey];
-            if(site[specKey] != false){
-                specSites[siteKey] = site;
+function testExc(specs, sites, options, times) {
+    for(var i=0; i<times; i++) {
+        for (var specKey in specs) {
+            var specSites = {};
+            for (var siteKey in sites) {
+                var site = sites[siteKey];
+                if (site[specKey] != false) {
+                    specSites[siteKey] = site;
+                }
             }
+            specs[specKey](options, specSites);
         }
-        specs[specKey](options, specSites);
     }
 }
 

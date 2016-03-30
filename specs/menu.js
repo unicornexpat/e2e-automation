@@ -29,15 +29,14 @@ var menu = function (options, sites) {
             masterPassed = masterPassed && this.currentTest.state === 'passed';
         });
 
-        Object.keys(sites).forEach(function(key) {
+        Object.keys(sites).forEach(function (key) {
             var site = sites[key];
             describe('MENU_SPEC: ' + site.name, function () {
                 var allPassed = true;
-
                 before(function () {
                     driver.status(function (err, status) {
                         if ((status.isShuttingDown != false && options.sauceLabs != true && options.os == 'iOS') || (status.details.status != 'available' && options.sauceLabs == true)) {
-                            console.log('IMITATING A NEW SESSION');
+                            console.log('INITATING A NEW SESSION');
                             driver.quit();
                             driver = driverInit(options);
                         }
@@ -57,6 +56,7 @@ var menu = function (options, sites) {
                             should.exist(el);
                         })
                         .elementByCss('.header-menu-icon')
+                        .sleep(1000)
                         .flick(0, 0, 1)
                         .sleep(1000)
                         .flick(0, 0, 1)
@@ -66,11 +66,9 @@ var menu = function (options, sites) {
                         .waitForElementByCss('.login-existing-user-wrapper', 10000)
                         .title().should.eventually.include(site.keys.logIn);
                 });
-
             });
         });
     });
 };
-
 
 module.exports = menu;
