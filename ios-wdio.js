@@ -1,7 +1,7 @@
 "use strict";
 require("./helpers/setup");
 
-var driverIoInit = require('./services/driver-init').driverIoInit;
+var driverIoInit = require('./services/driverIo-init');
 var serverConfig = require('./config/appium-servers').local.host1;
 
 

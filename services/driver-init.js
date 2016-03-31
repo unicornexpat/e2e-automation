@@ -1,5 +1,4 @@
-var wd = require("wd"),
-    webdriverio = require('webdriverio');
+var wd = require("wd");
 
 
 var driverInit = function initDriver(options){
@@ -8,12 +7,4 @@ var driverInit = function initDriver(options){
     return driver.init(options.desired);
 };
 
-var driverIoInit = function initDriverIo(options){
-    var driver = webdriverio.remote(options.serverConfig);
-    return driver.init(options.desired);
-};
-
-module.exports = {
-    driverInit: driverInit,
-    driverIoInit: driverIoInit
-};
+module.exports = driverInit;
