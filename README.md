@@ -44,13 +44,13 @@ If you also want to use Sauce Connect (secure tunelling):
 ####local:
 
 ```
-mocha ios-main.js
+mocha mobile-main.js
 ```
 
 ####using Sauce Labs:
 
 ```
-SAUCE=1 mocha ios-main.js
+SAUCE=1 mocha mobile-main.js
 ```
 
 ####using Sauce Labs + Sauce Connect:

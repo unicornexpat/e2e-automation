@@ -56,7 +56,7 @@ simulator.iPhone6S_ios92 = {
     platformName: 'iOS',
     platformVersion: '9.2',
     deviceName: 'iPhone 6s',
-    app: undefined
+    app: 'com.bytearc.SafariLaunchers'
 };
 
 

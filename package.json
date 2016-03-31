@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.io.thehut.local/Ethan.Nguyen/elysium-e2e-mobile.git"
+    "url": "git@gitlab.io.thehut.local:elysium/elysium-e2e-mobile.git"
   },
   "keywords": [
     "appium",
@@ -18,9 +18,9 @@
   "author": "sebv",
   "license": "Apache 2",
   "bugs": {
-    "url": "https://gitlab.io.thehut.local/Ethan.Nguyen/elysium-e2e-mobile"
+    "url": "https://git@gitlab.io.thehut.local:elysium/elysium-e2e-mobile.git"
   },
-  "homepage": "https://gitlab.io.thehut.local/Ethan.Nguyen/elysium-e2e-mobile",
+  "homepage": "https://git@gitlab.io.thehut.local:elysium/elysium-e2e-mobile.git",
   "devDependencies": {
     "chai": "2.2.0",
     "chai-as-promised": "^5.0.0",
@@ -32,8 +32,8 @@
     "underscore": "1.8.3",
     "wd": "0.3.11",
     "async": "1.5.2",
-    "sauce-connect-launcher": "0.14.0"
-
+    "sauce-connect-launcher": "0.14.0",
+    "webdriverio": "4.0.5"
   },
   "private": true
 }

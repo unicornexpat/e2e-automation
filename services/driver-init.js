@@ -1,11 +1,19 @@
-var wd = require("wd");
+var wd = require("wd"),
+    webdriverio = require('webdriverio');
 
 
 var driverInit = function initDriver(options){
     var driver = wd.promiseChainRemote(options.serverConfig);
     require("../helpers/logging").configure(driver);
-    var desired = options.desired;
-    return driver.init(desired);
+    return driver.init(options.desired);
 };
 
-module.exports = driverInit;
+var driverIoInit = function initDriverIo(options){
+    var driver = webdriverio.remote(options.serverConfig);
+    return driver.init(options.desired);
+};
+
+module.exports = {
+    driverInit: driverInit,
+    driverIoInit: driverIoInit
+};
