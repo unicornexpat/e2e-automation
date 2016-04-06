@@ -11,4 +11,4 @@ npm --version
 npm install
 npm run e2e-mobile-index
 wait
-node result-handler
+npm run e2e-result-handler
