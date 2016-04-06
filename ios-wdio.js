@@ -26,6 +26,10 @@ describe('Simple cases', function() {
     it("search-function", function(done) {
         return driver
             .url('http://m.mankind.co.uk')
+            .contexts().then(function(contexts){
+                console.log(contexts);
+            })
+            .context('WEBVIEW_3')
             .touch('.header-menu-icon')
             .pause(5000)
             .call(done);

@@ -4,13 +4,16 @@ var wd = require("wd"),
     async = require('async'),
     driverInit = require('../services/driver-init');
 
-var iosPagination = function (options, sites) {
+var iosPagination = function (options, sites, done) {
+    var failSites = {};
     describe("THG_PAGINIATION_SUITE", function () {
         this.timeout(100000);
         var masterPassed = true,
-            driver;
+            driver,
+            flickSpeed = 1;
 
         before(function () {
+            if (options.os == 'iOS') flickSpeed = 0;
             options.desired.name = 'THG_PAGINATION_SUITE: ' + options.os;
             driver = driverInit(options);
         });
@@ -20,8 +23,11 @@ var iosPagination = function (options, sites) {
                 .quit()
                 .finally(function () {
                     if (options.sauceLabs) {
-                        return driver.sauceJobStatus(masterPassed);
+                        return driver.sauceJobStatus(masterPassed, function(err){
+                            done(failSites);
+                        });
                     }
+                    done(failSites);
                 });
         });
 
@@ -38,14 +44,21 @@ var iosPagination = function (options, sites) {
                 before(function () {
                     driver.status(function (err, status) {
                         if ((status.isShuttingDown != false && options.sauceLabs != true && options.os == 'iOS') || (status.details.status != 'available' && options.sauceLabs == true)) {
-                            console.log('IMITATING A NEW SESSION');
-                            driver.quit();
+                            console.log('++++++++++++++++++++++++++++++++++++');
+                            console.log('INITIATING A NEW SESSION');
+                            console.log('++++++++++++++++++++++++++++++++++++');                            driver.quit();
                             driver = driverInit(options);
                         }
                     });
                 });
 
                 afterEach(function () {
+                    if(this.currentTest.state !='passed'){
+                        console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+                        console.log('FAILED TEST RECORDED: ' + key);
+                        console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+                        failSites[key] = site;
+                    }
                     allPassed = allPassed && this.currentTest.state === 'passed';
                 });
 

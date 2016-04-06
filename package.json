@@ -4,7 +4,7 @@
   "description": "Appium Sample Code",
   "main": "index.js",
   "scripts": {
-    "e2e-mobile-index": "mocha ./mobile-index.js --reporter mochawesome --reporter-options reportDir=reports/,reportName=mobile-index-report,reportTitle=Elysium-E2E-Mobile-Tests"
+    "e2e-mobile-index": "mocha ./mobile-index.js > testLog --reporter mochawesome --reporter-options reportDir=reports/,reportName=mobile-index-report,reportTitle=Elysium-E2E-Mobile-Tests"
   },
   "repository": {
     "type": "git",

@@ -4,13 +4,16 @@ var wd = require("wd"),
     async = require('async'),
     driverInit = require('../services/driver-init');
 
-var iosSearch = function(options, sites) {
+var iosSearch = function(options, sites, done) {
+    var failSites = {};
     describe("THG_SEARCH_SUITE", function () {
         this.timeout(100000);
         var masterPassed = true,
-            driver;
+            driver,
+            flickSpeed = 1;
 
         before(function () {
+            if (options.os == 'iOS') flickSpeed = 0;
             options.desired.name = 'THG_SEARCH_SUITE: ' + options.os;
             driver = driverInit(options);
 
@@ -21,8 +24,11 @@ var iosSearch = function(options, sites) {
                 .quit()
                 .finally(function () {
                     if (options.sauceLabs) {
-                        return driver.sauceJobStatus(masterPassed);
+                        return driver.sauceJobStatus(masterPassed, function(err){
+                            done(failSites);
+                        });
                     }
+                    done(failSites);
                 });
         });
 
@@ -39,14 +45,21 @@ var iosSearch = function(options, sites) {
                 before(function () {
                     driver.status(function (err, status) {
                         if ((status.isShuttingDown != false && options.sauceLabs != true && options.os == 'iOS') || (status.details.status != 'available' && options.sauceLabs == true)) {
-                            console.log('IMITATING A NEW SESSION');
-                            driver.quit();
+                            console.log('++++++++++++++++++++++++++++++++++++');
+                            console.log('INITIATING A NEW SESSION');
+                            console.log('++++++++++++++++++++++++++++++++++++');                            driver.quit();
                             driver = driverInit(options);
                         }
                     });
                 });
 
                 afterEach(function () {
+                    if(this.currentTest.state !='passed'){
+                        console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+                        console.log('FAILED TEST RECORDED: ' + key);
+                        console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+                        failSites[key] = site;
+                    }
                     allPassed = allPassed && this.currentTest.state === 'passed';
                 });
 
@@ -55,7 +68,7 @@ var iosSearch = function(options, sites) {
                         .get(site.urls[options.env])
                         .elementByCss('.search-focus', function touchSearch(err, search) {
                             if (err) throw err;
-                            search.flick(0, 0, 1, function flickCb(err) {
+                            search.flick(0, 0, flickSpeed, function flickCb(err) {
                                 if (err) throw err;
                                 driver.elementByCss('#search-text', 10000, function (err, el) {
                                     el.sendKeys(wd.SPECIAL_KEYS.Return);

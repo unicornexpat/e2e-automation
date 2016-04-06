@@ -10,3 +10,5 @@ cd elysium-e2e-mobile
 npm --version
 npm install
 npm run e2e-mobile-index
+wait
+node result-handler

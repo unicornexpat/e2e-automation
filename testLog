@@ -1,0 +1,1287 @@
+****************************************************************************************************
+[mochawesome] Generating report files...
+
+
+
+  THG_MENU_SUITE
+ > CALL init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"}) 
+ > POST /session {"desiredCapabilities":{"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"}}
+    MENU_SPEC: All Sole
+      1) MENU: All Sole - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: allSole
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Beauty Expert
+      2) MENU: Beauty Expert - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: beautyExpert
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Coggles
+      3) MENU: Coggles - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: coggles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Elizabet Arden
+      4) MENU: Elizabet Arden - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: elizabethArden
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Exante Diet
+      5) MENU: Exante Diet - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: exanteDiet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: HQ Hair
+      6) MENU: HQ Hair - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: hqHair
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: The Hut
+      7) MENU: The Hut - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: theHut
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: IWOOT
+      8) MENU: IWOOT - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: iwoot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Look Fantastic
+      9) MENU: Look Fantastic - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: lookFantastic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mankind
+      10) MENU: Mankind - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: manKind
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mass-Fi
+      11) MENU: Mass-Fi - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: massFi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Bag
+      12) MENU: My Bag - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myBag
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mio Skincare
+      13) MENU: Mio Skincare - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: mio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mio Skincare USA
+      14) MENU: Mio Skincare USA - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: mious
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Geek Box
+      15) MENU: My Geek Box - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myGeekBox
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Protein
+      16) MENU: My Protein - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myProtein
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Vitamins
+      17) MENU: My Vitamins - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myVitamins
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: PowerMan
+      18) MENU: PowerMan - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: powerMan
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: ProBikeKit
+      19) MENU: ProBikeKit - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: proBikeKit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Nintendo
+      20) MENU: Nintendo - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: nintendo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Zavvi
+      21) MENU: Zavvi - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: zavvi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Urban Retreat
+      22) MENU: Urban Retreat - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: urbanRetreat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Grow Gorgeous US
+      23) MENU: Grow Gorgeous US - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: growGorgeousUS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Grow Gorgeous UK
+      24) MENU: Grow Gorgeous UK - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: growGorgeousUK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Lancer Skin Care
+      25) MENU: Lancer Skin Care - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: lancer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=====================================
+TOTAL FAILED SITES: 25
+=====================================
+-------------------------------------
+1 ITERATION OF 3
+-------------------------------------
+    26) "after all" hook
+
+  THG_MENU_SUITE
+ > CALL init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"}) 
+ > POST /session {"desiredCapabilities":{"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"}}
+    MENU_SPEC: All Sole
+      27) MENU: All Sole - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: allSole
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Beauty Expert
+      28) MENU: Beauty Expert - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: beautyExpert
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Coggles
+      29) MENU: Coggles - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: coggles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Elizabet Arden
+      30) MENU: Elizabet Arden - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: elizabethArden
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Exante Diet
+      31) MENU: Exante Diet - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: exanteDiet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: HQ Hair
+      32) MENU: HQ Hair - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: hqHair
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: The Hut
+      33) MENU: The Hut - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: theHut
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: IWOOT
+      34) MENU: IWOOT - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: iwoot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Look Fantastic
+      35) MENU: Look Fantastic - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: lookFantastic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mankind
+      36) MENU: Mankind - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: manKind
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mass-Fi
+      37) MENU: Mass-Fi - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: massFi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Bag
+      38) MENU: My Bag - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myBag
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mio Skincare
+      39) MENU: Mio Skincare - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: mio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mio Skincare USA
+      40) MENU: Mio Skincare USA - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: mious
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Geek Box
+      41) MENU: My Geek Box - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myGeekBox
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Protein
+      42) MENU: My Protein - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myProtein
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Vitamins
+      43) MENU: My Vitamins - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myVitamins
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: PowerMan
+      44) MENU: PowerMan - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: powerMan
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: ProBikeKit
+      45) MENU: ProBikeKit - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: proBikeKit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Nintendo
+      46) MENU: Nintendo - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: nintendo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Zavvi
+      47) MENU: Zavvi - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: zavvi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Urban Retreat
+      48) MENU: Urban Retreat - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: urbanRetreat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Grow Gorgeous US
+      49) MENU: Grow Gorgeous US - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: growGorgeousUS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Grow Gorgeous UK
+      50) MENU: Grow Gorgeous UK - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: growGorgeousUK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Lancer Skin Care
+      51) MENU: Lancer Skin Care - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: lancer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
+2 ITERATION OF 3
+-------------------------------------
+-------------------------------------
+RERUN RESULT: failed
+-------------------------------------
+    52) "after all" hook
+
+  THG_MENU_SUITE
+ > CALL init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"}) 
+ > POST /session {"desiredCapabilities":{"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"}}
+    MENU_SPEC: All Sole
+      53) MENU: All Sole - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: allSole
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Beauty Expert
+      54) MENU: Beauty Expert - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: beautyExpert
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Coggles
+      55) MENU: Coggles - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: coggles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Elizabet Arden
+      56) MENU: Elizabet Arden - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: elizabethArden
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Exante Diet
+      57) MENU: Exante Diet - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: exanteDiet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: HQ Hair
+      58) MENU: HQ Hair - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: hqHair
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: The Hut
+      59) MENU: The Hut - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: theHut
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: IWOOT
+      60) MENU: IWOOT - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: iwoot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Look Fantastic
+      61) MENU: Look Fantastic - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: lookFantastic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mankind
+      62) MENU: Mankind - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: manKind
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mass-Fi
+      63) MENU: Mass-Fi - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: massFi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Bag
+      64) MENU: My Bag - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myBag
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mio Skincare
+      65) MENU: Mio Skincare - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: mio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mio Skincare USA
+      66) MENU: Mio Skincare USA - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: mious
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Geek Box
+      67) MENU: My Geek Box - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myGeekBox
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Protein
+      68) MENU: My Protein - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myProtein
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Vitamins
+      69) MENU: My Vitamins - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myVitamins
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: PowerMan
+      70) MENU: PowerMan - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: powerMan
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: ProBikeKit
+      71) MENU: ProBikeKit - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: proBikeKit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Nintendo
+      72) MENU: Nintendo - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: nintendo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Zavvi
+      73) MENU: Zavvi - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: zavvi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Urban Retreat
+      74) MENU: Urban Retreat - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: urbanRetreat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Grow Gorgeous US
+      75) MENU: Grow Gorgeous US - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: growGorgeousUS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Grow Gorgeous UK
+      76) MENU: Grow Gorgeous UK - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: growGorgeousUK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Lancer Skin Care
+      77) MENU: Lancer Skin Care - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: lancer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
+3 ITERATION OF 3
+-------------------------------------
+-------------------------------------
+RERUN RESULT: failed
+-------------------------------------
+    78) "after all" hook
+
+  THG_MENU_SUITE
+ > CALL init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"}) 
+ > POST /session {"desiredCapabilities":{"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"}}
+    MENU_SPEC: All Sole
+      79) MENU: All Sole - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: allSole
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Beauty Expert
+      80) MENU: Beauty Expert - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: beautyExpert
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Coggles
+      81) MENU: Coggles - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: coggles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Elizabet Arden
+      82) MENU: Elizabet Arden - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: elizabethArden
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Exante Diet
+      83) MENU: Exante Diet - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: exanteDiet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: HQ Hair
+      84) MENU: HQ Hair - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: hqHair
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: The Hut
+      85) MENU: The Hut - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: theHut
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: IWOOT
+      86) MENU: IWOOT - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: iwoot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Look Fantastic
+      87) MENU: Look Fantastic - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: lookFantastic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mankind
+      88) MENU: Mankind - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: manKind
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mass-Fi
+      89) MENU: Mass-Fi - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: massFi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Bag
+      90) MENU: My Bag - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myBag
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mio Skincare
+      91) MENU: Mio Skincare - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: mio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Mio Skincare USA
+      92) MENU: Mio Skincare USA - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: mious
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Geek Box
+      93) MENU: My Geek Box - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myGeekBox
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Protein
+      94) MENU: My Protein - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myProtein
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: My Vitamins
+      95) MENU: My Vitamins - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: myVitamins
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: PowerMan
+      96) MENU: PowerMan - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: powerMan
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: ProBikeKit
+      97) MENU: ProBikeKit - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: proBikeKit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Nintendo
+      98) MENU: Nintendo - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: nintendo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Zavvi
+      99) MENU: Zavvi - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: zavvi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Urban Retreat
+      100) MENU: Urban Retreat - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: urbanRetreat
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Grow Gorgeous US
+      101) MENU: Grow Gorgeous US - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: growGorgeousUS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Grow Gorgeous UK
+      102) MENU: Grow Gorgeous UK - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: growGorgeousUK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MENU_SPEC: Lancer Skin Care
+      103) MENU: Lancer Skin Care - Open and Close Menu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FAILED TEST RECORDED: lancer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=====================================
+TOTAL RERUN RESULT: failed
+=====================================
+*************************************
+FINAL TEST RESULTS: failed
+*************************************
+    104) "after all" hook
+
+
+  0 passing (19s)
+  104 failing
+
+  1) THG_MENU_SUITE MENU_SPEC: All Sole MENU: All Sole - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  2) THG_MENU_SUITE MENU_SPEC: Beauty Expert MENU: Beauty Expert - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  3) THG_MENU_SUITE MENU_SPEC: Coggles MENU: Coggles - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  4) THG_MENU_SUITE MENU_SPEC: Elizabet Arden MENU: Elizabet Arden - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  5) THG_MENU_SUITE MENU_SPEC: Exante Diet MENU: Exante Diet - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  6) THG_MENU_SUITE MENU_SPEC: HQ Hair MENU: HQ Hair - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  7) THG_MENU_SUITE MENU_SPEC: The Hut MENU: The Hut - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  8) THG_MENU_SUITE MENU_SPEC: IWOOT MENU: IWOOT - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  9) THG_MENU_SUITE MENU_SPEC: Look Fantastic MENU: Look Fantastic - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  10) THG_MENU_SUITE MENU_SPEC: Mankind MENU: Mankind - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  11) THG_MENU_SUITE MENU_SPEC: Mass-Fi MENU: Mass-Fi - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  12) THG_MENU_SUITE MENU_SPEC: My Bag MENU: My Bag - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  13) THG_MENU_SUITE MENU_SPEC: Mio Skincare MENU: Mio Skincare - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  14) THG_MENU_SUITE MENU_SPEC: Mio Skincare USA MENU: Mio Skincare USA - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  15) THG_MENU_SUITE MENU_SPEC: My Geek Box MENU: My Geek Box - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  16) THG_MENU_SUITE MENU_SPEC: My Protein MENU: My Protein - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  17) THG_MENU_SUITE MENU_SPEC: My Vitamins MENU: My Vitamins - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  18) THG_MENU_SUITE MENU_SPEC: PowerMan MENU: PowerMan - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  19) THG_MENU_SUITE MENU_SPEC: ProBikeKit MENU: ProBikeKit - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  20) THG_MENU_SUITE MENU_SPEC: Nintendo MENU: Nintendo - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  21) THG_MENU_SUITE MENU_SPEC: Zavvi MENU: Zavvi - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  22) THG_MENU_SUITE MENU_SPEC: Urban Retreat MENU: Urban Retreat - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  23) THG_MENU_SUITE MENU_SPEC: Grow Gorgeous US MENU: Grow Gorgeous US - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  24) THG_MENU_SUITE MENU_SPEC: Grow Gorgeous UK MENU: Grow Gorgeous UK - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  25) THG_MENU_SUITE MENU_SPEC: Lancer Skin Care MENU: Lancer Skin Care - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  26) THG_MENU_SUITE "after all" hook:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  27) THG_MENU_SUITE MENU_SPEC: All Sole MENU: All Sole - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  28) THG_MENU_SUITE MENU_SPEC: Beauty Expert MENU: Beauty Expert - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  29) THG_MENU_SUITE MENU_SPEC: Coggles MENU: Coggles - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  30) THG_MENU_SUITE MENU_SPEC: Elizabet Arden MENU: Elizabet Arden - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  31) THG_MENU_SUITE MENU_SPEC: Exante Diet MENU: Exante Diet - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  32) THG_MENU_SUITE MENU_SPEC: HQ Hair MENU: HQ Hair - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  33) THG_MENU_SUITE MENU_SPEC: The Hut MENU: The Hut - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  34) THG_MENU_SUITE MENU_SPEC: IWOOT MENU: IWOOT - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  35) THG_MENU_SUITE MENU_SPEC: Look Fantastic MENU: Look Fantastic - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  36) THG_MENU_SUITE MENU_SPEC: Mankind MENU: Mankind - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  37) THG_MENU_SUITE MENU_SPEC: Mass-Fi MENU: Mass-Fi - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  38) THG_MENU_SUITE MENU_SPEC: My Bag MENU: My Bag - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  39) THG_MENU_SUITE MENU_SPEC: Mio Skincare MENU: Mio Skincare - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  40) THG_MENU_SUITE MENU_SPEC: Mio Skincare USA MENU: Mio Skincare USA - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  41) THG_MENU_SUITE MENU_SPEC: My Geek Box MENU: My Geek Box - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  42) THG_MENU_SUITE MENU_SPEC: My Protein MENU: My Protein - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  43) THG_MENU_SUITE MENU_SPEC: My Vitamins MENU: My Vitamins - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  44) THG_MENU_SUITE MENU_SPEC: PowerMan MENU: PowerMan - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  45) THG_MENU_SUITE MENU_SPEC: ProBikeKit MENU: ProBikeKit - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  46) THG_MENU_SUITE MENU_SPEC: Nintendo MENU: Nintendo - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  47) THG_MENU_SUITE MENU_SPEC: Zavvi MENU: Zavvi - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  48) THG_MENU_SUITE MENU_SPEC: Urban Retreat MENU: Urban Retreat - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  49) THG_MENU_SUITE MENU_SPEC: Grow Gorgeous US MENU: Grow Gorgeous US - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  50) THG_MENU_SUITE MENU_SPEC: Grow Gorgeous UK MENU: Grow Gorgeous UK - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  51) THG_MENU_SUITE MENU_SPEC: Lancer Skin Care MENU: Lancer Skin Care - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  52) THG_MENU_SUITE "after all" hook:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  53) THG_MENU_SUITE MENU_SPEC: All Sole MENU: All Sole - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  54) THG_MENU_SUITE MENU_SPEC: Beauty Expert MENU: Beauty Expert - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  55) THG_MENU_SUITE MENU_SPEC: Coggles MENU: Coggles - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  56) THG_MENU_SUITE MENU_SPEC: Elizabet Arden MENU: Elizabet Arden - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  57) THG_MENU_SUITE MENU_SPEC: Exante Diet MENU: Exante Diet - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  58) THG_MENU_SUITE MENU_SPEC: HQ Hair MENU: HQ Hair - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  59) THG_MENU_SUITE MENU_SPEC: The Hut MENU: The Hut - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  60) THG_MENU_SUITE MENU_SPEC: IWOOT MENU: IWOOT - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  61) THG_MENU_SUITE MENU_SPEC: Look Fantastic MENU: Look Fantastic - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  62) THG_MENU_SUITE MENU_SPEC: Mankind MENU: Mankind - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  63) THG_MENU_SUITE MENU_SPEC: Mass-Fi MENU: Mass-Fi - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  64) THG_MENU_SUITE MENU_SPEC: My Bag MENU: My Bag - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  65) THG_MENU_SUITE MENU_SPEC: Mio Skincare MENU: Mio Skincare - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  66) THG_MENU_SUITE MENU_SPEC: Mio Skincare USA MENU: Mio Skincare USA - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  67) THG_MENU_SUITE MENU_SPEC: My Geek Box MENU: My Geek Box - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  68) THG_MENU_SUITE MENU_SPEC: My Protein MENU: My Protein - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  69) THG_MENU_SUITE MENU_SPEC: My Vitamins MENU: My Vitamins - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  70) THG_MENU_SUITE MENU_SPEC: PowerMan MENU: PowerMan - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  71) THG_MENU_SUITE MENU_SPEC: ProBikeKit MENU: ProBikeKit - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  72) THG_MENU_SUITE MENU_SPEC: Nintendo MENU: Nintendo - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  73) THG_MENU_SUITE MENU_SPEC: Zavvi MENU: Zavvi - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  74) THG_MENU_SUITE MENU_SPEC: Urban Retreat MENU: Urban Retreat - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  75) THG_MENU_SUITE MENU_SPEC: Grow Gorgeous US MENU: Grow Gorgeous US - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  76) THG_MENU_SUITE MENU_SPEC: Grow Gorgeous UK MENU: Grow Gorgeous UK - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  77) THG_MENU_SUITE MENU_SPEC: Lancer Skin Care MENU: Lancer Skin Care - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  78) THG_MENU_SUITE "after all" hook:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  79) THG_MENU_SUITE MENU_SPEC: All Sole MENU: All Sole - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  80) THG_MENU_SUITE MENU_SPEC: Beauty Expert MENU: Beauty Expert - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  81) THG_MENU_SUITE MENU_SPEC: Coggles MENU: Coggles - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  82) THG_MENU_SUITE MENU_SPEC: Elizabet Arden MENU: Elizabet Arden - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  83) THG_MENU_SUITE MENU_SPEC: Exante Diet MENU: Exante Diet - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  84) THG_MENU_SUITE MENU_SPEC: HQ Hair MENU: HQ Hair - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  85) THG_MENU_SUITE MENU_SPEC: The Hut MENU: The Hut - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  86) THG_MENU_SUITE MENU_SPEC: IWOOT MENU: IWOOT - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  87) THG_MENU_SUITE MENU_SPEC: Look Fantastic MENU: Look Fantastic - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  88) THG_MENU_SUITE MENU_SPEC: Mankind MENU: Mankind - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  89) THG_MENU_SUITE MENU_SPEC: Mass-Fi MENU: Mass-Fi - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  90) THG_MENU_SUITE MENU_SPEC: My Bag MENU: My Bag - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  91) THG_MENU_SUITE MENU_SPEC: Mio Skincare MENU: Mio Skincare - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  92) THG_MENU_SUITE MENU_SPEC: Mio Skincare USA MENU: Mio Skincare USA - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  93) THG_MENU_SUITE MENU_SPEC: My Geek Box MENU: My Geek Box - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  94) THG_MENU_SUITE MENU_SPEC: My Protein MENU: My Protein - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  95) THG_MENU_SUITE MENU_SPEC: My Vitamins MENU: My Vitamins - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  96) THG_MENU_SUITE MENU_SPEC: PowerMan MENU: PowerMan - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  97) THG_MENU_SUITE MENU_SPEC: ProBikeKit MENU: ProBikeKit - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  98) THG_MENU_SUITE MENU_SPEC: Nintendo MENU: Nintendo - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  99) THG_MENU_SUITE MENU_SPEC: Zavvi MENU: Zavvi - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  100) THG_MENU_SUITE MENU_SPEC: Urban Retreat MENU: Urban Retreat - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  101) THG_MENU_SUITE MENU_SPEC: Grow Gorgeous US MENU: Grow Gorgeous US - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  102) THG_MENU_SUITE MENU_SPEC: Grow Gorgeous UK MENU: Grow Gorgeous UK - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  103) THG_MENU_SUITE MENU_SPEC: Lancer Skin Care MENU: Lancer Skin Care - Open and Close Menu:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+  104) THG_MENU_SUITE "after all" hook:
+     [init({"browserName":"chrome","appium-version":"1.4.13","platformName":"ANDROID","platformVersion":"5.1","deviceName":"5f8b9b49","name":"THG_MENU_SUITE: Android"})] connect ECONNREFUSED 172.16.75.143:4724
+  Error: connect ECONNREFUSED 172.16.75.143:4724
+      at Object.exports._errnoException (util.js:870:11)
+      at exports._exceptionWithHostPort (util.js:893:20)
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+
+
+
+
+[mochawesome] Report saved to reports/mobile-index-report.html
+
+

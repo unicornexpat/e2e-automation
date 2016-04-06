@@ -3,7 +3,11 @@ var serverConfigs = require('../config/appium-servers'),
     sauceConnect = require('../config/sauce-connect'),
     driverInit = require('../services/driver-init');
 
+var async = require('async');
+var fs = require('fs');
+
 var runner = function(config) {
+    console.log('****************************************************************************************************');
     var serverConfig = config.serverConfig,
         desired = config.desired;
 
@@ -12,7 +16,9 @@ var runner = function(config) {
         desired.tags = ['THG_AUTOMATION_EN'];
         serverConfig = serverConfigs.sauce.server1;
         if(config.env == 'dev'){
+            console.log('*************************************');
             console.log('STARTING SAUCE CONNECT');
+            console.log('*************************************');
             sauceConnect();
         }
     }
@@ -25,22 +31,87 @@ var runner = function(config) {
         os: config.os
     };
 
-    testExc(config.specs, config.sites, options, 1);
+    testExc(config.specs, config.sites, options, 3);
 };
 
-function testExc(specs, sites, options, times) {
-    for(var i=0; i<times; i++) {
-        for (var specKey in specs) {
-            var specSites = {};
-            for (var siteKey in sites) {
-                var site = sites[siteKey];
-                if (site[specKey] != false) {
-                    specSites[siteKey] = site;
+function testExc(specs, sites, options, retry) {
+    var testResults = [];
+
+    async.forEachOfSeries(specs, function(spec, specKey, callback) {
+        var specSites = {};
+        for (var siteKey in sites) {
+            var site = sites[siteKey];
+            if (site[specKey] != false) {
+                specSites[siteKey] = site;
+            }
+        }
+        spec(options, specSites, function(failSites){
+            if(Object.keys(failSites).length > 0){
+                console.log('=====================================');
+                console.log('TOTAL FAILED SITES: '+ Object.keys(failSites).length);
+                console.log('=====================================');
+                testRerun(spec, failSites, options, retry, function(result){
+                    testResults.push(result);
+                    console.log('=====================================');
+                    console.log('TOTAL RERUN RESULT: '+ result);
+                    console.log('=====================================');
+                    return callback();
+                });
+            }
+            else{
+                testResults.push('firstPassed');
+                return callback();
+            }
+        });
+        }, function(){
+        console.log('*************************************');
+        console.log('FINAL TEST RESULTS: ' + testResults);
+        console.log('*************************************');
+
+        if(testResults.indexOf('failed') != -1){
+            fs.writeFile("./reports/testResult", "failed", function(err) {
+                if(err) {
+                    throw 'FAIL TO WRITE TEST RESULT';
+                }
+            });
+        }
+        else{
+            fs.writeFile("./reports/testResult", "passed", function(err) {
+                if(err) {
+                    throw 'FAIL TO WRITE TEST RESULT';
+                }
+            });
+        }
+    });
+}
+
+function testRerun(spec, sites, options, retry, next){
+    var time = 0;
+
+    function recRun(sites) {
+        var result = 'failed';
+        time++;
+        console.log('-------------------------------------');
+        console.log(time + ' ITERATION OF ' + retry);
+        console.log('-------------------------------------');
+        spec(options, sites, function (failSites) {
+            if(Object.keys(failSites).length == 0){
+                result = 'passed';
+                return next(result);
+            }
+            else{
+                if(time < retry) recRun(failSites);
+                else {
+                    return next(result);
                 }
             }
-            specs[specKey](options, specSites);
-        }
+            console.log('-------------------------------------');
+            console.log('RERUN RESULT: ' + result);
+            console.log('-------------------------------------');
+        })
     }
+
+    recRun(sites);
 }
 
 module.exports = runner;
