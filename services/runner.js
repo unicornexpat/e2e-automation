@@ -31,7 +31,7 @@ var runner = function(config) {
         os: config.os
     };
 
-    testExc(config.specs, config.sites, options, 3);
+    testExc(config.specs, config.sites, options, 5);
 };
 
 function testExc(specs, sites, options, retry) {
