@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fs.readFile('./reports/testResult', function (err, data) {
+fs.readFile('./reports/testResult.txt', function (err, data) {
     if (err) {
         throw 'FAIL TO CHECK TEST RESULT';
     }
