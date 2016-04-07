@@ -68,15 +68,15 @@ function testExc(specs, sites, options, retry) {
         console.log('FINAL TEST RESULTS: ' + testResults);
         console.log('*************************************');
 
-        if(testResults.indexOf('failed') != -1){
-            fs.writeFile("./reports/testResult.txt", "failed", function(err) {
+        if(testResults.indexOf('failed') == -1){
+            fs.writeFile("/reports/testResult.txt", "passed", function(err) {
                 if(err) {
                     throw 'FAIL TO WRITE TEST RESULT';
                 }
             });
         }
         else{
-            fs.writeFile("./reports/testResult.txt", "passed", function(err) {
+            fs.writeFile("/reports/testResult.txt", "failed", function(err) {
                 if(err) {
                     throw 'FAIL TO WRITE TEST RESULT';
                 }
