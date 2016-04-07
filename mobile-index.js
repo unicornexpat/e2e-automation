@@ -8,10 +8,10 @@ var config = require('./config/index'),
 
 setter
 //.runOnlySpec('menu');
-    //.setOs('iOS').useSauceLabs().setTarget(caps.simulator.iPhone5S_ios92).runOnlySpec('menu');
+    .setOs('iOS').useSauceLabs().setTarget(caps.simulator.iPhone5S_ios92);
     //.setOs('Android').useSauceLabs().setTarget(caps.simulator.nexus6_Android19);
    //.setTarget(caps.device.iPhone5C);
-    .setOs('Android').setTarget(caps.device.nexus5).runOnlySpec('menu').runOnlySite('manKind');
+    //.setOs('Android').setTarget(caps.device.nexus5).runOnlySpec('menu').runOnlySite('manKind');
     //.setTarget(caps.device.iPadMini3);
     //.runOnlySite('menu').runOnlySpec('menu');
 iosRunner(config);

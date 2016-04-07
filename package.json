@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "e2e-mobile-index": "mocha ./mobile-index.js > ./reports/testLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=mobile-index-report,reportTitle=Elysium-E2E-Mobile-Tests || true",
-    "e2e-result-handler": "node ./result-handler.js"
+    "e2e-get-result": "node ./get-result.js"
   },
   "repository": {
     "type": "git",
