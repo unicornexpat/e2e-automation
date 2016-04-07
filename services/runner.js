@@ -6,7 +6,7 @@ var serverConfigs = require('../config/appium-servers'),
 var async = require('async');
 var fs = require('fs');
 
-var runner = function(config) {
+var runner = function (config) {
     console.log('****************************************************************************************************');
     var serverConfig = config.serverConfig,
         desired = config.desired;
@@ -15,7 +15,7 @@ var runner = function(config) {
         desired.name = 'THG_Mobile_Automation';
         desired.tags = ['THG_AUTOMATION_EN'];
         serverConfig = serverConfigs.sauce.server1;
-        if(config.env == 'dev'){
+        if (config.env == 'dev') {
             console.log('*************************************');
             console.log('STARTING SAUCE CONNECT');
             console.log('*************************************');
@@ -35,57 +35,56 @@ var runner = function(config) {
 };
 
 function testExc(specs, sites, options, retry) {
-    var testResults = [];
+    var specRun = [],
+        testResults = [],
+        finalResult;
 
-    async.forEachOfSeries(specs, function(spec, specKey, callback) {
+    async.forEachOfSeries(specs, function (spec, specKey, callback) {
         var specSites = {};
+        specRun.push(specKey);
         for (var siteKey in sites) {
             var site = sites[siteKey];
             if (site[specKey] != false) {
                 specSites[siteKey] = site;
             }
         }
-        spec(options, specSites, function(failSites){
-            if(Object.keys(failSites).length > 0){
+        spec(options, specSites, function (failSites) {
+            if (Object.keys(failSites).length > 0) {
                 console.log('=====================================');
-                console.log('TOTAL FAILED SITES: '+ Object.keys(failSites).length);
+                console.log('TOTAL FAILED SITES: ' + Object.keys(failSites).length);
                 console.log('=====================================');
-                testRerun(spec, failSites, options, retry, function(result){
+                testRerun(spec, failSites, options, retry, function (result) {
                     testResults.push(result);
                     console.log('=====================================');
-                    console.log('TOTAL RERUN RESULT: '+ result);
+                    console.log('TOTAL RERUN RESULT: ' + result);
                     console.log('=====================================');
                     return callback();
                 });
             }
-            else{
+            else {
                 testResults.push('firstPassed');
                 return callback();
             }
         });
-        }, function(){
-        console.log('*************************************');
-        console.log('FINAL TEST RESULTS: ' + testResults);
-        console.log('*************************************');
-
-        if(testResults.indexOf('failed') == -1){
-            fs.writeFile("/reports/testResult.txt", "passed", function(err) {
-                if(err) {
-                    throw 'FAIL TO WRITE TEST RESULT';
-                }
-            });
+    }, function () {
+        if (testResults.indexOf('failed') != -1) {
+            finalResult = 'failed';
         }
-        else{
-            fs.writeFile("/reports/testResult.txt", "failed", function(err) {
-                if(err) {
-                    throw 'FAIL TO WRITE TEST RESULT';
-                }
-            });
+        else {
+            finalResult = 'passed';
         }
+        fs.writeFile("./reports/testResult.txt", finalResult, function (err) {
+            if (err) throw err;
+        });
+        console.log('*************************************');
+        console.log('SPECS RUN: ' + specRun);
+        console.log('SPEC RESULTS: ' + testResults);
+        console.log('FINAL RESULTS: ' + finalResult);
+        console.log('*************************************');
     });
 }
 
-function testRerun(spec, sites, options, retry, next){
+function testRerun(spec, sites, options, retry, next) {
     var time = 0;
 
     function recRun(sites) {
@@ -95,12 +94,12 @@ function testRerun(spec, sites, options, retry, next){
         console.log(time + ' ITERATION OF ' + retry);
         console.log('-------------------------------------');
         spec(options, sites, function (failSites) {
-            if(Object.keys(failSites).length == 0){
+            if (Object.keys(failSites).length == 0) {
                 result = 'passed';
                 return next(result);
             }
-            else{
-                if(time < retry) recRun(failSites);
+            else {
+                if (time < retry) recRun(failSites);
                 else {
                     return next(result);
                 }
