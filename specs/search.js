@@ -2,65 +2,50 @@
 require("../helpers/setup");
 var wd = require("wd"),
     async = require('async'),
-    driverInit = require('../services/driver-init');
+    driverService = require('../services/driver-service'),
+    consoleLog = require('../helpers/console-log');
 
-var iosSearch = function(options, sites, done) {
-    var failSites = {};
+var iosSearch = function(options, sites, callback) {
     describe("THG_SEARCH_SUITE", function () {
         this.timeout(100000);
-        var masterPassed = true,
+        var suitePassed = true,
             driver,
-            flickSpeed = 1;
+            failSites = {};
 
-        before(function () {
-            if (options.os == 'iOS') flickSpeed = 0;
+        before(function (done) {
             options.desired.name = 'THG_SEARCH_SUITE: ' + options.os;
-            driver = driverInit(options);
-
+            driverService.init(options, function (wd) {
+                driver = wd;
+                done();
+            });
         });
 
-        after(function () {
-            return driver
-                .quit()
-                .finally(function () {
-                    if (options.sauceLabs) {
-                        return driver.sauceJobStatus(masterPassed, function(err){
-                            done(failSites);
-                        });
-                    }
-                    done(failSites);
-                });
+        after(function (done) {
+            driverService.quit(driver, suitePassed, options.sauceLabs, function () {
+                done(callback(failSites));
+            })
         });
 
-        afterEach(function () {
-            masterPassed = masterPassed && this.currentTest.state === 'passed';
+        afterEach(function (done) {
+            suitePassed = suitePassed && this.currentTest.state === 'passed';
+            driverService.assure(driver, options, function(wd){
+                driver = wd;
+                done();
+            });
         });
 
         Object.keys(sites).forEach(function(key) {
             var site = sites[key];
 
             describe('SEARCH_SPEC: ' + site.name, function () {
-                var allPassed = true;
-
-                before(function () {
-                    driver.status(function (err, status) {
-                        if ((status.isShuttingDown != false && options.sauceLabs != true && options.os == 'iOS') || (status.details.status != 'available' && options.sauceLabs == true)) {
-                            console.log('++++++++++++++++++++++++++++++++++++');
-                            console.log('INITIATING A NEW SESSION');
-                            console.log('++++++++++++++++++++++++++++++++++++');                            driver.quit();
-                            driver = driverInit(options);
-                        }
-                    });
-                });
+                var sitePassed = true;
 
                 afterEach(function () {
                     if(this.currentTest.state !='passed'){
-                        console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-                        console.log('FAILED TEST RECORDED: ' + key);
-                        console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+                        consoleLog('FAILED TEST RECORDED: ' + key);
                         failSites[key] = site;
                     }
-                    allPassed = allPassed && this.currentTest.state === 'passed';
+                    sitePassed = sitePassed && this.currentTest.state === 'passed';
                 });
 
                 it("SEARCH: " + site.name + " - Return At Least 1 Item", function sectionsClick() {
@@ -68,7 +53,7 @@ var iosSearch = function(options, sites, done) {
                         .get(site.urls[options.env])
                         .elementByCss('.search-focus', function touchSearch(err, search) {
                             if (err) throw err;
-                            search.flick(0, 0, flickSpeed, function flickCb(err) {
+                            search.flick(0, 0, 1, function flickCb(err) {
                                 if (err) throw err;
                                 driver.elementByCss('#search-text', 10000, function (err, el) {
                                     el.sendKeys(wd.SPECIAL_KEYS.Return);

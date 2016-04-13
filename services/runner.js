@@ -1,13 +1,12 @@
 "use strict";
-var serverConfigs = require('../config/appium-servers'),
-    sauceConnect = require('../config/sauce-connect'),
-    driverInit = require('../services/driver-init');
-
-var async = require('async');
-var fs = require('fs');
+var async = require('async'),
+    fs = require('fs'),
+    serverConfigs = require('../config/appium-servers'),
+    sauceConnect = require('./sauce-connect'),
+    consoleLog = require('../helpers/console-log');
 
 var runner = function (config) {
-    console.log('****************************************************************************************************');
+    console.log('====================================================================================================');
     var serverConfig = config.serverConfig,
         desired = config.desired;
 
@@ -15,12 +14,6 @@ var runner = function (config) {
         desired.name = 'THG_Mobile_Automation';
         desired.tags = ['THG_AUTOMATION_EN'];
         serverConfig = serverConfigs.sauce.server1;
-        if (config.env == 'dev') {
-            console.log('*************************************');
-            console.log('STARTING SAUCE CONNECT');
-            console.log('*************************************');
-            sauceConnect();
-        }
     }
 
     var options = {
@@ -31,7 +24,8 @@ var runner = function (config) {
         os: config.os
     };
 
-    testExc(config.specs, config.sites, options, 5);
+    testExc(config.specs, config.sites, options, 5)
+
 };
 
 function testExc(specs, sites, options, retry) {
@@ -50,14 +44,10 @@ function testExc(specs, sites, options, retry) {
         }
         spec(options, specSites, function (failSites) {
             if (Object.keys(failSites).length > 0) {
-                console.log('=====================================');
-                console.log('TOTAL FAILED SITES: ' + Object.keys(failSites).length);
-                console.log('=====================================');
+                consoleLog('TOTAL FAILED SITES: ' + Object.keys(failSites).length);
                 testRerun(spec, failSites, options, retry, function (result) {
                     testResults.push(result);
-                    console.log('=====================================');
-                    console.log('TOTAL RERUN RESULT: ' + result);
-                    console.log('=====================================');
+                    consoleLog('TOTAL RERUN RESULT: ' + result);
                     return callback();
                 });
             }
@@ -76,11 +66,7 @@ function testExc(specs, sites, options, retry) {
         fs.writeFile("./reports/testResult.txt", finalResult, function (err) {
             if (err) throw err;
         });
-        console.log('*************************************');
-        console.log('SPECS RUN: ' + specRun);
-        console.log('SPEC RESULTS: ' + testResults);
-        console.log('FINAL RESULTS: ' + finalResult);
-        console.log('*************************************');
+        consoleLog('SPECS RUN: ' + specRun + '\n' + 'SPEC RESULTS: ' + testResults + '\n' + 'FINAL RESULTS: ' + finalResult);
     });
 }
 
@@ -90,9 +76,7 @@ function testRerun(spec, sites, options, retry, next) {
     function recRun(sites) {
         var result = 'failed';
         time++;
-        console.log('-------------------------------------');
-        console.log(time + ' ITERATION OF ' + retry);
-        console.log('-------------------------------------');
+        consoleLog('RERUN: ' + time + ' ITERATION OF ' + retry);
         spec(options, sites, function (failSites) {
             if (Object.keys(failSites).length == 0) {
                 result = 'passed';
@@ -104,9 +88,7 @@ function testRerun(spec, sites, options, retry, next) {
                     return next(result);
                 }
             }
-            console.log('-------------------------------------');
-            console.log('RERUN RESULT: ' + result);
-            console.log('-------------------------------------');
+            consoleLog('RERUN RESULT: ' + result);
         })
     }
 
