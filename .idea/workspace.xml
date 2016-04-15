@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72d1f364-689a-48b2-8631-630d3322f53b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android-rest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios-main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios-rest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/index.js" afterPath="$PROJECT_DIR$/config/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/site-types.js" afterPath="$PROJECT_DIR$/config/site-types.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mobile-index.js" afterPath="$PROJECT_DIR$/mobile-index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/driver-service.js" afterPath="$PROJECT_DIR$/services/driver-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/runner.js" afterPath="$PROJECT_DIR$/services/runner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/sauce-connect.js" afterPath="$PROJECT_DIR$/services/sauce-connect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/setter.js" afterPath="$PROJECT_DIR$/services/setter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specs/facet.js" afterPath="$PROJECT_DIR$/specs/facet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specs/menu.js" afterPath="$PROJECT_DIR$/specs/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specs/pagination.js" afterPath="$PROJECT_DIR$/specs/pagination.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specs/search.js" afterPath="$PROJECT_DIR$/specs/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specs/variation.js" afterPath="$PROJECT_DIR$/specs/variation.js" />
     </list>
     <ignored path="mobile-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mobile-index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mobile-index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobile-index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="180">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -61,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ios-rest.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ios-rest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios-rest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="105">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -205,11 +189,11 @@
         <option value="$PROJECT_DIR$/config/site-types.js" />
         <option value="$PROJECT_DIR$/services/setter.js" />
         <option value="$PROJECT_DIR$/services/driver-service.js" />
-        <option value="$PROJECT_DIR$/mobile-index.js" />
         <option value="$PROJECT_DIR$/android-rest.js" />
         <option value="$PROJECT_DIR$/android-main.js" />
         <option value="$PROJECT_DIR$/ios-main.js" />
         <option value="$PROJECT_DIR$/ios-rest.js" />
+        <option value="$PROJECT_DIR$/mobile-index.js" />
       </list>
     </option>
   </component>
@@ -753,12 +737,12 @@
       <workItem from="1460545343972" duration="21614000" />
       <workItem from="1460712899488" duration="56000" />
       <workItem from="1460713212839" duration="608000" />
-      <workItem from="1460723116443" duration="650000" />
+      <workItem from="1460723116443" duration="1916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="519641000" />
+    <option name="totallyTimeSpent" value="520907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="705" extended-state="6" />
@@ -772,7 +756,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20065252" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18739903" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1151,14 +1135,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile-index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android-rest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1185,8 +1161,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ios-rest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
         </state>
       </provider>
