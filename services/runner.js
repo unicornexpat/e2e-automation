@@ -5,6 +5,7 @@ var async = require('async'),
     sauceConnect = require('./sauce-connect'),
     consoleLog = require('../helpers/console-log');
 
+
 var runner = function (config) {
     console.log('====================================================================================================');
     var serverConfig = config.serverConfig,
@@ -21,33 +22,37 @@ var runner = function (config) {
         serverConfig: serverConfig,
         desired: desired,
         env: config.env,
-        os: config.os
+        os: config.os,
+        sauceConnect: config.sauceConnect
     };
 
-    testExc(config.specs, config.sites, options, 5)
-
+    if (config.sauceConnect) {
+        sauceConnect.open(function (sauceConnectProcess) {
+            testExc(config.specs, config.sites, options, 5, sauceConnectProcess);
+        });
+    }
+    else {
+        testExc(config.specs, config.sites, options, 5, false);
+    }
 };
 
-function testExc(specs, sites, options, retry) {
+function testExc(specs, sites, options, retry, sauceProcess) {
     var specRun = [],
         testResults = [],
         finalResult;
-
     async.forEachOfSeries(specs, function (spec, specKey, callback) {
         var specSites = {};
         specRun.push(specKey);
         for (var siteKey in sites) {
             var site = sites[siteKey];
-            if (site[specKey] != false) {
-                specSites[siteKey] = site;
-            }
+            if (site[specKey] != false) specSites[siteKey] = site;
         }
         spec(options, specSites, function (failSites) {
             if (Object.keys(failSites).length > 0) {
                 consoleLog('TOTAL FAILED SITES: ' + Object.keys(failSites).length);
                 testRerun(spec, failSites, options, retry, function (result) {
                     testResults.push(result);
-                    consoleLog('TOTAL RERUN RESULT: ' + result);
+                    consoleLog('FINAL RERUN RESULT: ' + result);
                     return callback();
                 });
             }
@@ -57,12 +62,9 @@ function testExc(specs, sites, options, retry) {
             }
         });
     }, function () {
-        if (testResults.indexOf('failed') != -1) {
-            finalResult = 'failed';
-        }
-        else {
-            finalResult = 'passed';
-        }
+        if (sauceProcess) sauceConnect.close(sauceProcess);
+        if (testResults.indexOf('failed') != -1) finalResult = 'failed';
+        else finalResult = 'passed';
         fs.writeFile("./reports/testResult.txt", finalResult, function (err) {
             if (err) throw err;
         });
@@ -84,11 +86,9 @@ function testRerun(spec, sites, options, retry, next) {
             }
             else {
                 if (time < retry) recRun(failSites);
-                else {
-                    return next(result);
-                }
+                else return next(result);
             }
-            consoleLog('RERUN RESULT: ' + result);
+            consoleLog(time + ' RERUN RESULT: ' + result);
         })
     }
 

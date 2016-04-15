@@ -10,6 +10,7 @@ var menu = function (options, sites, callback) {
         this.timeout(100000);
         var suitePassed = true,
             driver,
+            fail = 0,
             failSites = {};
 
         before(function (done) {
@@ -28,7 +29,14 @@ var menu = function (options, sites, callback) {
 
         afterEach(function (done) {
             suitePassed = suitePassed && this.currentTest.state === 'passed';
-            driverService.assure(driver, options, function(wd){
+            if (fail > 8) driverService.quit(driver, suitePassed, options.sauceLabs, function () {
+                driverService.init(options, function (wd) {
+                    driver = wd;
+                    fail = 0;
+                    done();
+                });
+            });
+            else driverService.assure(driver, options, function (wd) {
                 driver = wd;
                 done();
             });
@@ -42,6 +50,7 @@ var menu = function (options, sites, callback) {
                 afterEach(function () {
                     if (this.currentTest.state != 'passed') {
                         consoleLog('FAILED TEST RECORDED: ' + key);
+                        fail++;
                         failSites[key] = site;
                     }
                     sitePassed = sitePassed && this.currentTest.state === 'passed';

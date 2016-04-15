@@ -1,12 +1,13 @@
 var wd = require("wd"),
     consoleLog = require('../helpers/console-log');
-    driverService = require('./driver-service');
+driverService = require('./driver-service');
 
 
-var driverInit = function initDriver(options, done){
+var driverInit = function initDriver(options, done) {
     var driver = wd.promiseChainRemote(options.serverConfig);
     require("../helpers/logging").configure(driver);
     var time = 0;
+
     function recInit() {
         time++;
         driver.init(options.desired, function (err, sessionID, capabilities) {
@@ -34,18 +35,18 @@ var driverQuit = function (driver, suitePassed, sauceLabs, done) {
                     done();
                 });
             }
-            else{
+            else {
                 done();
             }
         });
 };
 
-var driverAssure = function(driver, options, done){
+var driverAssure = function (driver, options, done) {
     driver.status(function (err, status) {
-        if (err || (options.os == 'iOS' && !status.isShuttingDown && !options.sauceLabs)){
+        if (err || (options.os == 'iOS' && status.isShuttingDown != false && !options.sauceLabs)) {
             consoleLog('REINIT A NEW SESSION');
             driver.quit();
-            driverService.init(options, function(wd){
+            driverService.init(options, function (wd) {
                 done(wd);
             })
         }
@@ -60,3 +61,4 @@ module.exports = {
     quit: driverQuit,
     assure: driverAssure
 };
+

@@ -30,6 +30,11 @@ setter.prototype = {
         return this;
     },
 
+    sauceConnect: function(boolean){
+        this.config.sauceConnect = boolean;
+        return this;
+    },
+
     removeSpec: function(specName){
         delete this.config.specs[specName];
         return this;
@@ -59,6 +64,26 @@ setter.prototype = {
         var that = this;
         for(var key in this.config.sites) {
             if (key != siteName) {
+                delete that.config.sites[key];
+            }
+        }
+        return this
+    },
+
+    runSites: function(sites){
+        var that = this;
+        for(var key in this.config.sites) {
+            if (sites.indexOf(key) == -1) {
+                delete that.config.sites[key];
+            }
+        }
+        return this
+    },
+
+    excludeSites: function(sites){
+        var that = this;
+        for(var key in this.config.sites) {
+            if (sites.indexOf(key) != -1) {
                 delete that.config.sites[key];
             }
         }

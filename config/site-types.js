@@ -2,6 +2,8 @@ var sites = require('./sites');
 
 var siteTypes = {};
 
+siteTypes.main = ['myProtein', 'lookFantastic', 'theHut', 'zavi'];
+
 siteTypes.unknown = {
     name: 'unknown',
     type: 0,
