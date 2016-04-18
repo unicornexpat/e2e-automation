@@ -10,11 +10,11 @@ var config = require('./config/index'),
 setter
 //.runOnlySpec('menu');
     //.setOs('iOS').useSauceLabs().setTarget(caps.simulator.iPhone5S_ios92).sauceConnect(true).setEnv('dev');
-    //.setOs('Android').useSauceLabs().setTarget(caps.simulator.nexus6_Android19);
+    .setOs('Android').useSauceLabs().setTarget(caps.simulator.nexus6_Android19);
    //.setTarget(caps.device.iPhone5C);
     //.setOs('Android').setTarget(caps.device.nexus5).runOnlySpec('menu');
     //.setTarget(caps.device.iPadMini3);
     //.runOnlySite('menu').runOnlySpec('menu');
-    .setOs('Android').setTarget(caps.device.nexus5).runOnlySite('manKind').runOnlySpec('menu');
+    // .setOs('Android').setTarget(caps.device.nexus5).runOnlySite('manKind').runOnlySpec('menu');
 
 iosRunner(config);
