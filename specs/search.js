@@ -1,17 +1,18 @@
 "use strict";
-require("../helpers/setup");
-var wd = require("wd"),
-    async = require('async'),
-    driverService = require('../services/driver-service'),
-    consoleLog = require('../helpers/console-log');
 
-var iosSearch = function(options, sites, callback) {
+require("../helpers/setup");
+const wd = require("wd");
+const async = require('async');
+const driverService = require('../services/driver-service');
+const consoleLog = require('../helpers/console-log');
+
+const iosSearch = (options, sites, callback) => {
     describe("THG_SEARCH_SUITE", function () {
         this.timeout(100000);
-        var suitePassed = true,
-            driver,
-            fail = 0,
-            failSites = {};
+        let suitePassed = true;
+        let driver;
+        let fail = 0;
+        let failSites = {};
 
         before(function (done) {
             options.desired.name = 'THG_SEARCH_SUITE: ' + options.os;
@@ -22,9 +23,7 @@ var iosSearch = function(options, sites, callback) {
         });
 
         after(function (done) {
-            driverService.quit(driver, suitePassed, options.sauceLabs, function () {
-                done(callback(failSites));
-            })
+            driverService.quit(driver, suitePassed, options.sauceLabs, () => done(callback(failSites)));
         });
 
         afterEach(function (done) {

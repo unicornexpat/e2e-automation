@@ -1,6 +1,6 @@
 var environments = {
-    dev: 'dev',
-    live: 'live'
+  dev: 'dev',
+  live: 'live'
 };
 
 module.exports = environments;

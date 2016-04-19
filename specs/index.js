@@ -1,4 +1,4 @@
-var specs = {
+const specs = {
     facet: require('./facet'),
     menu: require('./menu'),
     productVariation: require('./variation'),

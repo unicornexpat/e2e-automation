@@ -1,11 +1,13 @@
-var caps = require('./config/caps'),
-    hosts = require('./config/appium-servers'),
-    siteTypes = require('./config/site-types');
+'use strict';
+const caps = require('./config/caps');
+const hosts = require('./config/appium-servers');
+const siteTypes = require('./config/site-types');
 
-var config = require('./config/index'),
-    Setter = require('./services/setter'),
-    setter = new Setter(config),
-    iosRunner = require('./services/runner');
+const config = require('./config/index');
+const Setter = require('./services/setter');
+const iosRunner = require('./services/runner');
+
+let setter = new Setter(config);
 
 setter.excludeSites(siteTypes.main);
 

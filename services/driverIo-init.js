@@ -1,9 +1,10 @@
-var webdriverio = require('webdriverio');
+'use strict';
 
+const webdriverio = require('webdriverio');
 
-var driverIoInit = function initDriverIo(options){
-    var driver = webdriverio.remote(options.serverConfig);
-    return driver.init(options.desired);
+const driverIoInit = (options) => {
+  const driver = webdriverio.remote(options.serverConfig);
+  return driver.init(options.desired);
 };
 
 module.exports = driverIoInit;

@@ -1,8 +1,8 @@
 "use strict";
 
-var express = require('express'),
-    app = express(),
-    path = require('path');
+const express = require('express');
+const path = require('path');
+let app = express();
 
 app.use(express.static(__dirname + '/static'));
 
@@ -21,9 +21,9 @@ app.get('/ApiDemos-debug.apk', function (req, res) {
 var server;
 
 exports.start = function () {
-    server = app.listen(3000);
+  server = app.listen(3000);
 };
 
 exports.stop = function () {
-    server.close();
+  server.close();
 };
