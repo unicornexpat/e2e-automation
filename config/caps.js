@@ -75,6 +75,16 @@ device.iIphone6Plus = {
   udid: '42a6b6cd093a321fad3f3ab691e58b235dce6ffe'
 };
 
+device.iPhone4s = {
+  'appium-version': '1.4.13',
+  platformName: 'iOS',
+  platformVersion: '7.1.2',
+  deviceName: 'iPhone 4S',
+  browserName: 'safari',
+  //app: 'com.bytearc.SafariLaunchers',
+  udid: '0d0782044dbc23ed2c15775e296462fb927e980d'
+};
+
 device.iPhone5C = {
   'appium-version': '1.4.13',
   platformName: 'iOS',
