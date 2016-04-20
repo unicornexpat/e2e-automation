@@ -23,8 +23,8 @@ device.note1 = {
   browserName: 'chrome',
   'appium-version': '1.4.13',
   platformName: 'ANDROID',
-  platformVersion: '5.1',
-  deviceName: '5f8b9b49',
+  platformVersion: '4.1.2',
+  deviceName: '0019dc5324363f',
   app: undefined
 };
 
@@ -32,8 +32,8 @@ device.s3mini = {
   browserName: 'chrome',
   'appium-version': '1.4.13',
   platformName: 'ANDROID',
-  platformVersion: '5.1',
-  deviceName: '5f8b9b49',
+  platformVersion: '4.3',
+  deviceName: '4df1bf3613626f47',
   app: undefined
 };
 
