@@ -12,6 +12,6 @@ let setter = new Setter(config);
 setter
   .setOs('Android')
   .setTarget(caps.device.s5)
-  .setHost(hosts.local.mac4726);
+  .setHost(hosts.local.mac4823);
 
 iosRunner(config);

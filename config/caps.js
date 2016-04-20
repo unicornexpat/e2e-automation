@@ -19,6 +19,24 @@ device.nexus5_wifi = {
   app: undefined
 };
 
+device.note1 = {
+  browserName: 'chrome',
+  'appium-version': '1.4.13',
+  platformName: 'ANDROID',
+  platformVersion: '5.1',
+  deviceName: '5f8b9b49',
+  app: undefined
+};
+
+device.s3mini = {
+  browserName: 'chrome',
+  'appium-version': '1.4.13',
+  platformName: 'ANDROID',
+  platformVersion: '5.1',
+  deviceName: '5f8b9b49',
+  app: undefined
+};
+
 device.s5 = {
   browserName: 'chrome',
   'appium-version': '1.4.13',
