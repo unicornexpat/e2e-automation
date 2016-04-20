@@ -78,6 +78,28 @@ device.iPadMini3 = {
 };
 
 
+device.iPadMini1 = {
+  'appium-version': '1.4.13',
+  platformName: 'iOS',
+  platformVersion: '7.0.4',
+  deviceName: 'iPad Mini',
+  browserName: 'safari',
+  //app: 'com.bytearc.SafariLaunchers',
+  udid: '2a23a6003edfa7a701452f6e493e23c939d61840'
+};
+
+
+device.iPadAir = {
+  'appium-version': '1.4.13',
+  platformName: 'iOS',
+  platformVersion: '8.1',
+  deviceName: 'iPad Air',
+  browserName: 'safari',
+  //app: 'com.bytearc.SafariLaunchers',
+  udid: '25a4aec7933b7fc3d18bebe6776c3c4e56f71e65'
+};
+
+
 //simulator
 simulator.nexus6_Android19 = {
   browserName: 'chrome',

@@ -10,7 +10,7 @@ const iosRunner = require('./services/runner');
 var setter = new Setter(config);
 
 setter
-  .excludeSites(siteTypes.main)
-  .setHost(hosts.local.host4)
-  .setTarget(caps.device.iPadMini3);
+  .setHost(hosts.local.mac4725)
+  .setTarget(caps.device.iPadAir);
+
 iosRunner(config);
