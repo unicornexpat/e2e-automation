@@ -14,7 +14,7 @@ const driverInit = (options, done) => {
   function recInit() {
     time++;
     driver.init(options.desired, (err, sessionID, capabilities) => {
-      if (err && (time < 3)) {
+      if (err && (time < 5)) {
         consoleLog(err);
         setTimeout(function () {
           recInit();
