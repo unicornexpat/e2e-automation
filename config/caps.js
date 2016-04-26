@@ -75,7 +75,7 @@ device.iIphone6Plus = {
   udid: '42a6b6cd093a321fad3f3ab691e58b235dce6ffe'
 };
 
-device.iPhone4s = {
+device.iPhone4S = {
   'appium-version': '1.4.13',
   platformName: 'iOS',
   platformVersion: '7.1.2',
@@ -98,7 +98,7 @@ device.iPhone5C = {
 device.iPadMini3 = {
   'appium-version': '1.4.13',
   platformName: 'iOS',
-  platformVersion: '9.2',
+  platformVersion: '8.3',
   deviceName: 'iPad Mini',
   browserName: 'safari',
   //app: 'com.bytearc.SafariLaunchers',
@@ -142,6 +142,7 @@ simulator.iPhone5S_ios92 = {
   browserName: 'safari',
   'appium-version': '1.4.13',
   platformName: 'iOS',
+  platformVersion: '9.2',
   platformVersion: '9.2',
   deviceName: 'iPhone 5s',
   app: undefined

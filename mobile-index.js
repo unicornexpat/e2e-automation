@@ -7,4 +7,7 @@ const iosRunner = require('./services/runner');
 
 var setter = new Setter(config);
 
+setter.useSauceLabs()
+  .setOs('Anroid').setTarget(caps.simulator.nexus6_Android19);
+
 iosRunner(config);
