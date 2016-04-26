@@ -41,7 +41,7 @@ const driverQuit = (driver, suitePassed, sauceLabs, done) => {
 
 const driverAssure = (driver, options, done) => {
   driver.status((err, status) => {
-    if (err || (options.os === 'iOS' && status.isShuttingDown !== false && !options.sauceLabs)) {
+    if (err) {
       consoleLog('RE-INIT A SESSION');
       driver.quit();
       driverService.init(options, (wd) => done(wd));

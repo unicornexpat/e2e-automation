@@ -3,7 +3,7 @@ var simulator = {};
 
 device.nexus5 = {
   browserName: 'chrome',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'ANDROID',
   platformVersion: '5.1',
   deviceName: '097637cf2820fdb8',
@@ -12,7 +12,7 @@ device.nexus5 = {
 
 device.nexus5_wifi = {
   browserName: 'chrome',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'ANDROID',
   platformVersion: '5.1',
   deviceName: '172.16.57.38',
@@ -21,7 +21,7 @@ device.nexus5_wifi = {
 
 device.note1 = {
   browserName: 'chrome',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'ANDROID',
   platformVersion: '4.1.2',
   deviceName: '0019dc5324363f',
@@ -30,7 +30,7 @@ device.note1 = {
 
 device.s3mini = {
   browserName: 'chrome',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'ANDROID',
   platformVersion: '4.3',
   deviceName: '4df1bf3613626f47',
@@ -39,7 +39,7 @@ device.s3mini = {
 
 device.s5 = {
   browserName: 'chrome',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'ANDROID',
   platformVersion: '5.1',
   deviceName: '5f8b9b49',
@@ -48,7 +48,7 @@ device.s5 = {
 
 device.s5_wifi = {
   browserName: 'chrome',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'ANDROID',
   platformVersion: '5.1',
   deviceName: '5f8b9b49',
@@ -58,7 +58,7 @@ device.s5_wifi = {
 
 device.mi_4i = {
   browserName: 'chrome',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'ANDROID',
   platformVersion: '5.0.2',
   deviceName: 'b9cce42f',
@@ -66,7 +66,7 @@ device.mi_4i = {
 };
 
 device.iIphone6Plus = {
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'iOS',
   platformVersion: '9.2',
   deviceName: 'iPhone 6 Plus',
@@ -76,7 +76,7 @@ device.iIphone6Plus = {
 };
 
 device.iPhone4S = {
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'iOS',
   platformVersion: '7.1.2',
   deviceName: 'iPhone 4S',
@@ -86,7 +86,7 @@ device.iPhone4S = {
 };
 
 device.iPhone5C = {
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'iOS',
   platformVersion: '9.2',
   deviceName: 'iPhone 5C',
@@ -96,7 +96,7 @@ device.iPhone5C = {
 };
 
 device.iPadMini3 = {
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'iOS',
   platformVersion: '8.3',
   deviceName: 'iPad Mini',
@@ -107,7 +107,7 @@ device.iPadMini3 = {
 
 
 device.iPadMini1 = {
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'iOS',
   platformVersion: '7.0.4',
   deviceName: 'iPad Mini',
@@ -118,7 +118,7 @@ device.iPadMini1 = {
 
 
 device.iPadAir = {
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'iOS',
   platformVersion: '8.1',
   deviceName: 'iPad Air',
@@ -131,7 +131,7 @@ device.iPadAir = {
 //simulator
 simulator.nexus6_Android19 = {
   browserName: 'chrome',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'ANDROID',
   platformVersion: '5.1',
   deviceName: 'Android Simulator',
@@ -140,7 +140,7 @@ simulator.nexus6_Android19 = {
 
 simulator.iPhone5S_ios92 = {
   browserName: 'safari',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'iOS',
   platformVersion: '9.2',
   platformVersion: '9.2',
@@ -150,7 +150,7 @@ simulator.iPhone5S_ios92 = {
 
 simulator.iPhone6S_ios92 = {
   browserName: 'safari',
-  'appium-version': '1.4.13',
+  'appium-version': '1.5.2',
   platformName: 'iOS',
   platformVersion: '9.2',
   deviceName: 'iPhone 6s'

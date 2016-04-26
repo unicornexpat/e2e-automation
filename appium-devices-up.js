@@ -26,7 +26,7 @@ androidDetect.stdout.on('data', (data) => {
     const key = id.indexOf('\t');
     if (key > 0) androidDevices.push(id.substr(0, key));
   });
-  console.log(iOsDevices);
+  console.log(androidDevices);
   androidDevices.map((id) => {
     exec(`ttab node ../appium --session-override -p ${udid[id].port} -bp ${udid[id].bp}  -U ${id} --chromedriver-port ${udid[id].cp}`);
   });

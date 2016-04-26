@@ -10,7 +10,7 @@ const iosRunner = require('./services/runner');
 let setter = new Setter(config);
 
 setter.setOs('Android');
-setter.setHost(hosts.local.mac4722);
+setter.setHost(hosts.local.mac4822);
 setter.setTarget(caps.device.nexus5);
 setter.excludeSites(siteTypes.main);
 
