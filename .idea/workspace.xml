@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72d1f364-689a-48b2-8631-630d3322f53b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/android-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/devices-detect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/ios-node.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android-rest.js" afterPath="$PROJECT_DIR$/android-rest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appium-devices-up.js" afterPath="$PROJECT_DIR$/appium-devices-up.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/caps.js" afterPath="$PROJECT_DIR$/config/caps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/driver-service.js" afterPath="$PROJECT_DIR$/services/driver-service.js" />
     </list>
     <ignored path="mobile-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +31,38 @@
       <file leaf-file-name="appium-devices-up.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appium-devices-up.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ios-node.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/ios-node.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="android-node.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/android-node.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="devices-detect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/devices-detect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -58,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="caps.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="caps.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/caps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="392">
+              <caret line="156" column="2" selection-start-line="156" selection-start-column="2" selection-end-line="156" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -86,9 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-main.sh" />
-        <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh" />
-        <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-main.sh" />
         <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-rest.sh" />
         <option value="$PROJECT_DIR$/get-result.js" />
         <option value="$PROJECT_DIR$/specs/index.js" />
@@ -134,9 +161,12 @@
         <option value="$PROJECT_DIR$/ios-main.js" />
         <option value="$PROJECT_DIR$/android-main.js" />
         <option value="$PROJECT_DIR$/android-rest.js" />
-        <option value="$PROJECT_DIR$/appium-devices-up.js" />
         <option value="$PROJECT_DIR$/services/driver-service.js" />
         <option value="$PROJECT_DIR$/config/caps.js" />
+        <option value="$PROJECT_DIR$/services/devices-detect.js" />
+        <option value="$PROJECT_DIR$/appium-devices-up.js" />
+        <option value="$PROJECT_DIR$/services/ios-node.js" />
+        <option value="$PROJECT_DIR$/services/android-node.js" />
       </list>
     </option>
   </component>
@@ -155,7 +185,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="705" />
+    <option name="height" value="707" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -211,7 +241,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,7 +258,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="caps&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/caps.js&#10;site&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/sites.js&#10;setter&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/services/setter.js&#10;sites&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/sites.js&#10;appium&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/appium-servers.js&#10;package&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/package.json&#10;pack&#9;FILE&#9;file:///Users/nguyene/Work/mobile-test/package.json&#10;mocha&#9;FILE&#9;file:///Users/nguyene/Work/mobile-test/node_modules/wd/test/mocha.opts&#10;mocha.opts&#9;FILE&#9;file:///Users/nguyene/Work/mobile-test/node_modules/wd/node_modules/request/node_modules/json-stringify-safe/test/mocha.opts" />
+    <property name="SearchEverywhereHistoryKey" value="caps,&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/caps.js&#10;caps&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/caps.js&#10;site&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/sites.js&#10;setter&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/services/setter.js&#10;sites&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/sites.js&#10;appium&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/config/appium-servers.js&#10;package&#9;FILE&#9;file:///Users/nguyene/Work/elysium-e2e-mobile/package.json&#10;pack&#9;FILE&#9;file:///Users/nguyene/Work/mobile-test/package.json&#10;mocha&#9;FILE&#9;file:///Users/nguyene/Work/mobile-test/node_modules/wd/test/mocha.opts&#10;mocha.opts&#9;FILE&#9;file:///Users/nguyene/Work/mobile-test/node_modules/wd/node_modules/request/node_modules/json-stringify-safe/test/mocha.opts" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -694,15 +724,15 @@
       <workItem from="1460712899488" duration="56000" />
       <workItem from="1460713212839" duration="608000" />
       <workItem from="1460723116443" duration="2252000" />
-      <workItem from="1460972799742" duration="49310000" />
+      <workItem from="1460972799742" duration="53876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="570553000" />
+    <option name="totallyTimeSpent" value="575119000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="705" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="707" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -714,7 +744,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20880914" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20813008" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1825525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -761,30 +791,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysiume2eMobile.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-main.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-main.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1073,14 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium-devices-up.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/promise-utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1153,6 +1151,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/caps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="156" column="2" selection-start-line="156" selection-start-column="2" selection-end-line="156" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/driver-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1161,10 +1167,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/caps.js">
+    <entry file="file://$PROJECT_DIR$/appium-devices-up.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/devices-detect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/ios-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/android-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
