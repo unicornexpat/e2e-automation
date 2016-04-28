@@ -7,7 +7,7 @@ var index = {
   env: 'live',
   sites: require('./sites'),
   specs: require('../specs/index'),
-  serverConfig: require('./appium-servers').local.mac4722,
+  serverConfig: require('./appium-servers').macMini['4722'],
   desired: _.clone(require("./caps").device.iIphone6Plus),
   os: 'iOS',
   sauceConnect: false

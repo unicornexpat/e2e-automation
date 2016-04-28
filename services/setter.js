@@ -19,7 +19,6 @@ setter.prototype = {
   setOs: function (os) {
     this.config.os = os;
     this.config.desired = caps.device.nexus5;
-    this.config.serverConfig = servers.local.host2;
     return this;
   },
 

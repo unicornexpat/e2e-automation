@@ -10,7 +10,8 @@ const iosRunner = require('./services/runner');
 var setter = new Setter(config);
 
 setter.excludeSites(siteTypes.main);
-setter.setHost(hosts.local.mac4722);
+setter.setHost(hosts.macMini[4722]);
 setter.setTarget(caps.device.iIphone6Plus);
 
 iosRunner(config);
+
