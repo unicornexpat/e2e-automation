@@ -9,6 +9,6 @@ cd elysium-e2e-mobile
 # Executing tests
 npm --version
 npm install
-npm run e2e-ios-main
+npm run e2e-ios-rest
 wait
 npm run e2e-get-result
