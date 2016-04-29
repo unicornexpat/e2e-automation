@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72d1f364-689a-48b2-8631-630d3322f53b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-othersites.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh" afterPath="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-topsites.sh" afterPath="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-topsites.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-rest.sh" afterPath="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-rest.sh" />
     </list>
     <ignored path="mobile-test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +51,18 @@
       <file leaf-file-name="elysium-android-rest.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="elysium-ios-rest.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-rest.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,31 +108,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elysium-e2e-mobile-topsites.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="elysium-e2e-mobile-topsites.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-topsites.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="elysium-ios-all.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-all.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="elysium-android-all.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-all.sh">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="elysium-e2e-mobile-othersites.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-othersites.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -143,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/services/sauce-connect.js" />
         <option value="$PROJECT_DIR$/config/evironment.js" />
         <option value="$PROJECT_DIR$/config/server-blocks.js" />
         <option value="$PROJECT_DIR$/specs/menu.js" />
@@ -183,9 +185,7 @@
         <option value="$PROJECT_DIR$/android-rest.js" />
         <option value="$PROJECT_DIR$/ios-main.js" />
         <option value="$PROJECT_DIR$/ios-rest.js" />
-        <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-rest.sh" />
         <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysiume2eMobile.sh" />
-        <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh" />
         <option value="$PROJECT_DIR$/ios-all.js" />
         <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-all.sh" />
         <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-all.sh" />
@@ -194,6 +194,9 @@
         <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-main.sh" />
         <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-main.sh" />
         <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-topsites.sh" />
+        <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-othersites.sh" />
+        <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh" />
+        <option value="$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-rest.sh" />
       </list>
     </option>
   </component>
@@ -302,16 +305,16 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/deployment/scripts/jenkins" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/services" />
       <recent name="$PROJECT_DIR$/specs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/services" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
   <component name="RunManager">
@@ -763,12 +766,12 @@
       <workItem from="1460713212839" duration="608000" />
       <workItem from="1460723116443" duration="2252000" />
       <workItem from="1460972799742" duration="88738000" />
-      <workItem from="1461928635764" duration="459000" />
+      <workItem from="1461928635764" duration="669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="610440000" />
+    <option name="totallyTimeSpent" value="610650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="707" extended-state="6" />
@@ -830,7 +833,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/android-4823.js" />
     <entry file="file://$PROJECT_DIR$/android-4825.js" />
     <entry file="file://$PROJECT_DIR$/android-4822.js" />
     <entry file="file://$PROJECT_DIR$/ios-4724.js" />
@@ -1044,13 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-rest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-all.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1099,14 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-main.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1125,8 +1112,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-topsites.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-e2e-mobile-othersites.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-android-rest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/scripts/jenkins/elysium-ios-rest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
