@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "e2e-mobile-index": "mocha ./mobile-index.js > ./reports/testLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=mobile-index-report,reportTitle=Elysium-E2E-Mobile-Tests || true",
+    "e2e-ios-all": "mocha ./ios-all.js > ./reports/iosAllTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=ios-all-report,reportTitle=Elysium-E2E-iOS-All || true",
     "e2e-ios-main": "mocha ./ios-main.js > ./reports/iosMainTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=ios-main-report,reportTitle=Elysium-E2E-iOS-Main || true",
     "e2e-ios-rest": "mocha ./ios-rest.js > ./reports/iosRestTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=ios-rest-report,reportTitle=Elysium-E2E-iOS-Rest || true",
+    "e2e-android-all": "mocha ./android-all.js > ./reports/androidAllTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=android-all-report,reportTitle=Elysium-E2E-Android-All || true",
     "e2e-android-main": "mocha ./android-main.js > ./reports/androidMainTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=android-main-report,reportTitle=Elysium-E2E-Android-Main || true",
     "e2e-android-rest": "mocha ./android-rest.js > ./reports/androidRestTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=mobile-index-report,reportTitle=Elysium-E2E-Android-Rest || true",
     "e2e-get-result": "node ./get-result.js"
