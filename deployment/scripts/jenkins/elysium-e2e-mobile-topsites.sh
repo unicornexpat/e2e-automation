@@ -26,4 +26,3 @@ function wait_for_background_tasks {
 sh ./deployment/scripts/jenkins/elysium-ios-main.sh &
 sh ./deployment/scripts/jenkins/elysium-android-main.sh &
 wait_for_background_tasks
-npm run e2e-get-result
