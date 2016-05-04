@@ -11,7 +11,8 @@
     "e2e-android-all": "mocha ./android-all.js > ./reports/androidAllTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=android-all-report,reportTitle=Elysium-E2E-Android-All || true",
     "e2e-android-main": "mocha ./android-main.js > ./reports/androidMainTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=android-main-report,reportTitle=Elysium-E2E-Android-Main || true",
     "e2e-android-rest": "mocha ./android-rest.js > ./reports/androidRestTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=mobile-index-report,reportTitle=Elysium-E2E-Android-Rest || true",
-    "e2e-get-result": "node ./get-result.js"
+    "e2e-get-result": "node ./get-result.js",
+    "e2e-server-startup": "node ./appium-devices-up.js"
   },
   "repository": {
     "type": "git",
