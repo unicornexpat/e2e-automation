@@ -49,6 +49,7 @@ const iosPagination = (options, sites, callback) => {
 
         afterEach(function () {
           if (this.currentTest.state != 'passed') {
+            driverService.takeScreenshot(driver, key);
             consoleLog(`FAILED TEST RECORDED: ${key}`);
             failSites[key] = site;
             fail++;

@@ -50,10 +50,10 @@ function testExc(specs, sites, options, retry, sauceProcess) {
     }
     spec(options, specSites, (failSites) => {
       if (Object.keys(failSites).length > 0) {
-        consoleLog('TOTAL FAILED SITES: ' + Object.keys(failSites).length);
+        consoleLog(`TOTAL FAILED SITES: ${Object.keys(failSites).length}`);
         testRerun(spec, failSites, options, retry, (result) => {
           testResults.push(result);
-          consoleLog('FINAL RERUN RESULT: ' + result);
+          consoleLog(`FINAL RERUN RESULT: ${result}`);
           return callback();
         });
       }
@@ -66,10 +66,10 @@ function testExc(specs, sites, options, retry, sauceProcess) {
     if (sauceProcess) sauceConnect.close(sauceProcess);
     if (testResults.indexOf('failed') != -1) finalResult = 'failed';
     else finalResult = 'passed';
-    fs.writeFile("./reports/testResult.txt", finalResult, (err) => {
+    fs.writeFile('./reports/testResult.txt', finalResult, (err) => {
       if (err) throw err;
     });
-    consoleLog('SPECS RUN: ' + specRun + '\n' + 'SPEC RESULTS: ' + testResults + '\n' + 'FINAL RESULTS: ' + finalResult);
+    consoleLog(`SPECS RUN: ${specRun} \n SPEC RESULTS: ${testResults} \n FINAL RESULTS: ${finalResult}`);
   });
 }
 
@@ -79,7 +79,7 @@ function testRerun(spec, sites, options, retry, next) {
   function recRun(sites) {
     let result = 'failed';
     time++;
-    consoleLog('RERUN: ' + time + ' ITERATION OF ' + retry);
+    consoleLog(`RERUN: ${time} ITERATION OF ${retry}`);
     spec(options, sites, (failSites) => {
       if (Object.keys(failSites).length === 0) {
         result = 'passed';
@@ -89,7 +89,7 @@ function testRerun(spec, sites, options, retry, next) {
         if (time < retry) recRun(failSites);
         else return next(result);
       }
-      consoleLog(time + ' RERUN RESULT: ' + result);
+      consoleLog(`${time} RERUN RESULT: ${result}`);
     })
   }
 

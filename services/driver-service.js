@@ -3,6 +3,8 @@
 const wd = require("wd");
 const consoleLog = require('../helpers/console-log');
 const driverService = require('./driver-service');
+const fs = require('fs');
+
 
 
 const driverInit = (options, done) => {
@@ -51,9 +53,21 @@ const driverAssure = (driver, options, done) => {
   });
 };
 
+const takeScreenshot = (driver, site) => {
+  driver.takeScreenshot((err, screenShot) => {
+    const date = new Date();
+    const fileName = `${site}_${date}.png`;
+    consoleLog(fileName);
+    fs.writeFile(`./screenshot/${fileName}`, screenShot, 'base64', function(err){
+      if (err) consoleLog(err);
+    })
+  })
+};
+
 module.exports = {
   init: driverInit,
   quit: driverQuit,
-  assure: driverAssure
+  assure: driverAssure,
+  takeScreenshot: takeScreenshot
 };
 
