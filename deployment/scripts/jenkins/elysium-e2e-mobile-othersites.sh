@@ -10,6 +10,7 @@ cd elysium-e2e-mobile
 npm --version
 npm install
 mkdir reports
+mkdir screenshot
 
 function wait_for_background_tasks {
     FAIL=0
