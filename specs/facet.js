@@ -48,14 +48,15 @@ const iosFacet = (options, sites, callback) => {
       describe(`FACET_SPEC: ${site.name}`, function () {
         let sitePassed = true;
 
-        afterEach(function () {
+        afterEach(function (done) {
           if (this.currentTest.state !== 'passed') {
-            driver.takeScreenshot(driver, key);
             consoleLog(`FAILED TEST RECORDED: ${key}`);
             failSites[key] = site;
             fail++;
+            driverService.takeScreenshot(driver, key);
           }
           sitePassed = sitePassed && this.currentTest.state === 'passed';
+          done();
         });
 
         it(`SEARCH: ${site.name} - Return At Least 1 Item`, () => {

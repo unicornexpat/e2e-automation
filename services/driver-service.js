@@ -58,6 +58,7 @@ const takeScreenshot = (driver, site) => {
     const date = new Date();
     const fileName = `${site}_${date}.png`;
     consoleLog(fileName);
+    consoleLog(fileName);
     fs.writeFile(`./screenshot/${fileName}`, screenShot, 'base64', function(err){
       if (err) consoleLog(err);
     })

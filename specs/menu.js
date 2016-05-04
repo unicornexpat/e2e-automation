@@ -48,12 +48,13 @@ const menu = (options, sites, callback) => {
 
         afterEach(function () {
           if (this.currentTest.state !== 'passed') {
-            driverService.takeScreenshot(driver, key);
-            consoleLog(`FAILED TEST RECORDED: + ${key}`);
-            fail++;
+            consoleLog(`FAILED TEST RECORDED: ${key}`);
             failSites[key] = site;
+            fail++;
+            driverService.takeScreenshot(driver, key);
           }
           sitePassed = sitePassed && this.currentTest.state === 'passed';
+          done();
         });
 
         it(`MENU: ${site.name} - Open and Close Menu`, () => {

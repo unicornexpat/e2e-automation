@@ -48,13 +48,14 @@ const iosPagination = (options, sites, callback) => {
         var sitePassed = true;
 
         afterEach(function () {
-          if (this.currentTest.state != 'passed') {
-            driverService.takeScreenshot(driver, key);
+          if (this.currentTest.state !== 'passed') {
             consoleLog(`FAILED TEST RECORDED: ${key}`);
             failSites[key] = site;
             fail++;
+            driverService.takeScreenshot(driver, key);
           }
           sitePassed = sitePassed && this.currentTest.state === 'passed';
+          done();
         });
 
         it(`SEARCH: ${site.name} - Return At Least 1 Item`, () => {
