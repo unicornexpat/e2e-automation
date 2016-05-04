@@ -27,7 +27,9 @@ const driverInit = (options, done) => {
 };
 
 const driverQuit = (driver, suitePassed, sauceLabs, done) => {
-  driver
+  return driver
+    .deleteAllCookies()
+    .close()
     .quit()
     .finally(function () {
       if (sauceLabs) {
