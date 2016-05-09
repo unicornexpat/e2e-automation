@@ -47,7 +47,7 @@ const iosPagination = (options, sites, callback) => {
       describe(`PAGINATION_SPEC: ${site.name}`, function () {
         var sitePassed = true;
 
-        afterEach(function () {
+        afterEach(function (done) {
           if (this.currentTest.state !== 'passed') {
             consoleLog(`FAILED TEST RECORDED: ${key}`);
             failSites[key] = site;

@@ -46,7 +46,7 @@ const menu = (options, sites, callback) => {
       describe(`MENU_SPEC: ${site.name}`, function () {
         var sitePassed = true;
 
-        afterEach(function () {
+        afterEach(function (done) {
           if (this.currentTest.state !== 'passed') {
             consoleLog(`FAILED TEST RECORDED: ${key}`);
             failSites[key] = site;
