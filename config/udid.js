@@ -29,6 +29,12 @@ const udid = {
     bp: 3826,
     cp: 9826
   },
+  '099eb3a3' : {
+    name: 's4mini',
+    port: 4827,
+    bp: 3827,
+    cp: 9827
+  },
   '42a6b6cd093a321fad3f3ab691e58b235dce6ffe' : {
     name: 'iIphone6Plus',
     port: 4722,

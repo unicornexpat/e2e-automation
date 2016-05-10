@@ -35,6 +35,15 @@ device.s3mini = {
   platformVersion: '4.3',
   deviceName: '4df1bf3613626f47',
   app: undefined
+}
+
+device.s4mini = {
+  browserName: 'chrome',
+  'appium-version': '1.5.2',
+  platformName: 'ANDROID',
+  platformVersion: '4.4',
+  deviceName: '099eb3a3',
+  app: undefined
 };
 
 device.s5 = {
