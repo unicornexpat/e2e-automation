@@ -26,6 +26,6 @@ function wait_for_background_tasks {
     fi
 }
 
-sh ./deployment/scripts/jenkins/elysium-ios-main.sh &
+#sh ./deployment/scripts/jenkins/elysium-ios-main.sh &
 sh ./deployment/scripts/jenkins/elysium-android-main.sh &
 wait_for_background_tasks
