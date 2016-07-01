@@ -26,6 +26,12 @@ function wait_for_background_tasks {
     fi
 }
 
+mitmproxy --setheader :~q:X-THEHUTSRV:230 &
+
+echo entering sleep
+sleep 70
+echo exiting sleep
+
 #sh ./deployment/scripts/jenkins/elysium-ios-main.sh &
 sh ./deployment/scripts/jenkins/elysium-android-main.sh &
 wait_for_background_tasks
