@@ -4,6 +4,9 @@
   "description": "Appium Sample Code",
   "main": "index.js",
   "scripts": {
+    "start": "npm-run-all --parallel lint:watch",
+    "lint": "node_modules/.bin/esw specs helpers services || true",
+    "lint:watch": "npm run lint -- --watch",
     "e2e-mobile-index": "mocha ./mobile-index.js > ./reports/testLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=mobile-index-report,reportTitle=Elysium-E2E-Mobile-Tests || true",
     "e2e-ios-all": "mocha ./ios-all.js > ./reports/iosAllTestLog.txt --reporter mochawesome --reporter-options reportDir=reports/,reportName=ios-all-report,reportTitle=Elysium-E2E-iOS-All || true",
     "e2e-ios-main": "mocha ./ios-main.js > ./reports/iosMainTestLog.txt --reporter mochawesome --reporter-options reportDir=mochaIosMain/,reportName=ios-main-report,reportTitle=Elysium-E2E-iOS-Main || true",
@@ -41,7 +44,10 @@
     "wd": "0.3.11",
     "async": "1.5.2",
     "sauce-connect-launcher": "0.14.0",
-    "webdriverio": "4.0.5"
+    "webdriverio": "4.0.5",
+    "eslint": "2.9.0",
+    "eslint-watch": "2.1.11",
+    "eslint-plugin-import": "1.6.1"
   },
   "private": true
 }
