@@ -26,10 +26,6 @@ function wait_for_background_tasks {
     fi
 }
 
-echo entering sleep
-sleep 70
-echo exiting sleep
-
 #sh ./deployment/scripts/jenkins/elysium-ios-rest.sh &
 sh ./deployment/scripts/jenkins/elysium-android-rest.sh &
 wait_for_background_tasks
