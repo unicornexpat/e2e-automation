@@ -25,7 +25,6 @@ function wait_for_background_tasks {
         exit 1
     fi
 }
-mitmproxy --setheader :~q:X-THEHUTSRV:230 &
 
 echo entering sleep
 sleep 70
