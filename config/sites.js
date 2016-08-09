@@ -133,7 +133,7 @@ sites.iwoot = {
 sites.lookFantastic = {
   name: 'Look Fantastic',
   bundle: undefined,
-  facet: true,
+  facet: 'v2',
   urls: {
     dev: 'http://m.lfinten.pl.thehutgroup.thg/',
     live: 'http://m.lookfantastic.com/'
