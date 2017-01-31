@@ -4,3 +4,4 @@ mochawesome-reports
 .idea
 .cache
 screenshot
+config/appium-servers.js
